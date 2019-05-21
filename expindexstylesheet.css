@@ -1,0 +1,29 @@
+body{
+    background-color:#eee;
+    font-family:Sans-Serif;
+      }
+  
+  .cat{
+    background-color:#6dbde8;
+    color:#ffffff;
+    padding:5px; 
+    text-align:center;
+    margin-bottom:30px;
+    
+  }
+
+  .cow{
+    max-width:800px;
+    margin:auto;
+    background-color:white;
+    padding:25px;
+    border-radius: 25px;
+    border: 2px solid rgb(131, 131, 131);
+    width: 800px;
+  }
+
+  .lamb{
+   color:#32d967;  
+  }
+
+  
