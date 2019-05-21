@@ -1,0 +1,22 @@
+h1{
+    font-size:20pt;
+    color:rgb(25, 153, 125);
+    text-align:center;
+}
+
+h2{
+    font-size:16pt;
+    color:powderblue;
+    text-align:center;
+}
+
+p{
+    color:pink;
+    font-size:12pt;
+    text-align:center;
+}
+
+.dogs{
+    color:salmon;
+    font-size:14pt;
+}
