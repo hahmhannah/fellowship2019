@@ -1,69 +1,105 @@
 <html>
     <head>
         <style>
+            * {
+                margin:0;
+                padding:0;
+                box-sizing:border-box;
+            }
+    
+              .header{
+                background-color:#C6D6D1;
+                height:150px;
+                padding-bottom:22px;
+                padding-top:1px;
+                margin:35px;
+                }  
 
-          .header{
-            background-color:#3E9995;
-            float:left;
-            width:25%;
-            padding:6px;
-            position:fixed;
-            top: 0;
-            text-align:center;
-            text-align:center;
-            color:black;
-            font-size:14pt;
             
+              .headerlinks{
+                  height:75px;
+                  background-color:E9D2D1;
+              }
 
-          }  
-
-          h1{
-            font-size:40pt;
-            font-family:arial;
-            color:black;
-          }
-          
-         .headerbox{
-             float:right;
-             width:75%;
-             position:fixed;
-             top:0px;
-             left:380px;
-             padding:15px;
-             background-color:#90C3C3;
-             height:114px;
+              .link{
+                float:left;
+                width: 25%;
+                margin:45px;
+                margin-top:10px;
+                height:55px;
+                background-color:#D2B9B4;
+              }
+    
+              h1{
+                font-size:40pt;
+                font-family:arial;
+                color:black;
+                text-align:center;
+                padding:30px;
+    
+                
+              }
+              
+            
+              p{
+                  font-size:12pt;
+                  color:black;
+                  font-size:12pt;
+                  text-align:center;
+                  padding:0;
+                  position:relative;
+                  bottom:15px;
+              }
+    
              
-      
+               
+             .column{
+                 
+                 width:372;
+                 
+                 background-color:#A2CBCC;
+                 
+                
+             } 
+              
+                
+             .content{
+                 
+                 height:350px;
+               
+                 background-color:seashell;
+                 margin-left:200px;
+                 margin-right:200px;
+                 margin-bottom:50px;
+                 margin-top:50px;
 
-         }
-           
-         .column{
-             float:left;
-             width:372;
-             height:800px;
-             background-color:#A2CBCC;
-             left:50px;
-             margin-left:0px;
-         } 
-          
-            
-           
-
-          body{
-              background-color:#D6E5E8;
-          }
-
-        </style>
+             }
+               
+    
+              body{
+                  background-color:#B2AAA3;
+              }
+            </style>
     </head>
 
 <body>
 
     <div class='header'>
     <h1>Snapshots</h1>
-        <p>For the small moments</p>
+        <p>For the little moments</p>
     </div>
+
+    <div class=headerlinks>
+        <div class=link></div>
+        <div class=link></div>
+        <div class=link></div>
+        
+       
+    </div>
+
     <div class=headerbox></div>
     <div class=column></div>
+    <div class=content></div>
 
 
 
