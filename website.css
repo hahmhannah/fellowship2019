@@ -6,10 +6,10 @@
 
   .header{
     background-color:#C6D6D1;
-    height:150px;
+    height:175px;
     padding-bottom:22px;
     padding-top:1px;
-    margin:35px;
+    
     }  
 
 
@@ -53,6 +53,7 @@
 
   h2{
     color:black;
+
   }
   
 
@@ -82,11 +83,15 @@
      
      height:350px;
      background-color:seashell;
-     margin-left:200px;
-     margin-right:200px;
+     margin-left:250px;
+     margin-right:250px;
      margin-bottom:50px;
      margin-top:50px;
-     font-size:24pt;
+     font-size:18pt;
+     padding-left:20px;
+     padding-top:15px;
+    
+     
 
  }
    
