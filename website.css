@@ -9,33 +9,38 @@
     height:175px;
     padding-bottom:22px;
     padding-top:20px;
+    text-align:center;
     
 
     
     }  
 
-    
+
+  
 
   .headerlinks{
     height:75px;
     background-color:#E9D2D1;
   }
 
- a:link, a:visited{
+ .headerlinks a:link, a:visited{
     float:left;
-    width: 25%;
+    width:200px;
     margin:45px;
     margin-top:10px;
     height:55px;
     background-color:#D2B9B4;
     text-align:center;
-    padding:12px;
+    padding-top:15px;
     text-decoration:none;
     color:black;
     overflow:hidden;
+    position:relative;
+    left:130px;
+    
   }
 
-  a:hover, a:active{
+  .headerlinks a:hover, a:active{
     background-color:rgb(223, 197, 192);
   }
     
@@ -46,7 +51,7 @@
 
   h1{
     font-size:40pt;
-    font-family:arial;
+    font-family:'Encode Sans';
     color:black;
     text-align:center;
     padding:30px;
@@ -57,6 +62,8 @@
 
   h2{
     color:black;
+    font-size:16pt;
+    font-family:'Encode Sans';
 
   }
   
@@ -64,7 +71,6 @@
   p{
       font-size:12pt;
       color:black;
-      font-size:12pt;
       text-align:center;
       padding:0;
       position:relative;
@@ -101,6 +107,6 @@
    
 
   body{
-      background-color:#B2AAA3;
+      background-color:#FFFCF7;
     
   }
