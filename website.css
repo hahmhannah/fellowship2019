@@ -8,10 +8,12 @@
     background-color:#C6D6D1;
     height:175px;
     padding-bottom:22px;
-    padding-top:1px;
+    padding-top:20px;
+
     
     }  
 
+    
 
   .headerlinks{
     height:75px;
@@ -80,11 +82,11 @@
   
     
  .content{
-     
-     height:350px;
+   
+     height:275px;
      background-color:seashell;
-     margin-left:250px;
-     margin-right:250px;
+     margin-left:350px;
+     margin-right:350px;
      margin-bottom:50px;
      margin-top:50px;
      font-size:18pt;
@@ -98,4 +100,5 @@
 
   body{
       background-color:#B2AAA3;
+    
   }
