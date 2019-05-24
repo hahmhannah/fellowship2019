@@ -6,7 +6,7 @@
 
   .header{
     background-color:#C6D6D1;
-    height:175px;
+    height:150px;
     padding-bottom:22px;
     padding-top:20px;
     text-align:center;
@@ -19,7 +19,7 @@
   
 
   .headerlinks{
-    height:75px;
+    height:50px;
     background-color:#E9D2D1;
   }
 
@@ -28,15 +28,16 @@
     width:200px;
     margin:45px;
     margin-top:10px;
-    height:55px;
+    height:30px;
     background-color:#D2B9B4;
     text-align:center;
-    padding-top:15px;
+    padding-top:4px;
     text-decoration:none;
     color:black;
     overflow:hidden;
     position:relative;
     left:130px;
+    font-size:10pt;
     
   }
 
@@ -62,7 +63,6 @@
 
   h2{
     color:black;
-    font-size:16pt;
     font-family:'Encode Sans';
 
   }
@@ -91,15 +91,15 @@
     
  .content{
    
-     height:275px;
+     height:350px;
      background-color:seashell;
      margin-left:350px;
      margin-right:350px;
      margin-bottom:50px;
-     margin-top:50px;
+     margin-top:60px;
      font-size:18pt;
      padding-left:20px;
-     padding-top:15px;
+     padding-top:20px;
     
      
 
