@@ -69,12 +69,12 @@
   
 
   p{
-      font-size:12pt;
+      font-size:14pt;
       color:black;
-      text-align:center;
-      padding:0;
-      position:relative;
-      bottom:15px;
+      text-align:left;
+      padding-top:15px;
+
+      
   }
 
  
@@ -93,8 +93,8 @@
    
      height:350px;
      background-color:seashell;
-     margin-left:350px;
-     margin-right:350px;
+     /*margin-left:350px;
+     margin-right:350px; */
      margin-bottom:50px;
      margin-top:60px;
      font-size:18pt;
