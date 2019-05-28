@@ -1,20 +1,24 @@
 
-*{
+/* *{
     margin:0;
     padding:0;
-}
+} */
 
 body{
     font-family:arial;
     background-color:white;
+   
+
+   
 }
 
 .navbar{
     list-style-type:none;
     overflow:hidden;
-    background-color:black;
-    height:45px;
-    padding-top:15px;
+    height:15px;
+    margin-top:20px;
+    text-align:center;
+    
     /*font-family:'arial';*/
    /* box-shadow:20px pink; */
 }
@@ -24,12 +28,12 @@ li{
 }
 
 li a{
-    color:white;
+    color:black;
     text-decoration:none;
-    padding:30px;
-    font-size:20px;
+    padding:10px;
+    font-size:14px;
     font-family:'arial';
-/* padding not working? */
+
 }
 
 li a:hover{
@@ -37,6 +41,15 @@ li a:hover{
 
 }
 
+.homepic{
+    margin-left:100px;
+    width:900px;
+    height:550px;
+   
+    
+}
+
+/*
 .heading{
     background-color:rgb(230, 230, 230);
     height:420px;
@@ -44,24 +57,31 @@ li a:hover{
     
 
 }
+*/
 
 .mainpage{
     color:black;
-    font-size:150px;
+    font-size:40px;
     font-family:times;
-    position:fixed;
-    bottom:80px;
+    
+    
 }
 
+/*
 .headerimage{
-    background-image:"file:///Users/hahmster/Downloads/freddy-castro-133326-unsplash-ConvertImage.jpg";
-}
+    background-image:url(/homepagepic.jpg);
+    background-repeat:no-repeat;
+    height:200px;
+    width:800px;
+   
+} */
 /*
 .heading{
     text-align:left;
     font-size:20px;
     padding-top:30px;  
 }
+
 
 
 
