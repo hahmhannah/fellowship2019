@@ -1,14 +1,17 @@
 <?php
-function absoluteValue($rawInput){
-    if($rawInput < 0){
-        $processedInput = $rawInput * -1;
-    }
-    else{
-        $processedInput = $rawInput;
-    }
+include('include/header.php');
 
-    return $processedInput;
+echoHeader();
+
+echo "
+    <h1>Home page</h1>
+";
+
+function echoHeader(){
+    echo "
+        <div style='text-align:right;'>
+            <a href='/'>Home</a>
+        </div> 
+    ";
+
 }
-
-echo absoluteValue(-999). "<br/>";
-echo absoluteValue(-23);
