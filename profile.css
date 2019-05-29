@@ -7,20 +7,15 @@
 body{
     font-family:arial;
     background-color:white;
-   
-
-   
 }
 
 .navbar{
     list-style-type:none;
     overflow:hidden;
     height:15px;
-    margin-top:20px;
-    text-align:center;
-    
-    /*font-family:'arial';*/
-   /* box-shadow:20px pink; */
+    margin-top:35px;
+    margin-right:20px;
+    text-align:center;  
 }
 
 li{
@@ -33,38 +28,36 @@ li a{
     padding:10px;
     font-size:14px;
     font-family:'arial';
-
 }
 
 li a:hover{
     color:gray;
-
 }
 
 .homepic{
+    position:absolute;
+    top:120px;
     margin-left:100px;
     width:900px;
-    height:550px;
-   
-    
+    height:550px;   
 }
 
-/*
-.heading{
-    background-color:rgb(230, 230, 230);
-    height:420px;
-    margin:100px 75px 75px ;
-    
-
-}
-*/
 
 .mainpage{
     color:black;
     font-size:40px;
     font-family:times;
-    
-    
+    position:absolute;
+    top:0;
+    left:110px;   
+}
+
+.notes{
+    font-size:14px;
+    font-family:'times';
+    position:absolute;
+    top:54px;
+    left:110px;
 }
 
 /*
@@ -82,6 +75,15 @@ li a:hover{
     padding-top:30px;  
 }
 
+/*
+.heading{
+    background-color:rgb(230, 230, 230);
+    height:420px;
+    margin:100px 75px 75px ;
+    
+
+}
+*/
 
 
 
