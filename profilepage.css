@@ -14,8 +14,8 @@ body{
     overflow:hidden;
     height:15px;
     margin-top:35px;
-    margin-right:20px;
-    text-align:center;  
+    margin-right:150px;
+    text-align:center;       
 }
 
 li{
@@ -36,10 +36,10 @@ li a:hover{
 
 .homepic{
     position:absolute;
-    top:120px;
-    margin-left:100px;
-    width:900px;
-    height:550px;   
+    top:190px;
+    margin-left:142px;
+    width:600px;
+    height:400px;   
 }
 
 
@@ -49,7 +49,7 @@ li a:hover{
     font-family:times;
     position:absolute;
     top:0;
-    left:110px;   
+    left:150px;   
 }
 
 .notes{
@@ -57,17 +57,44 @@ li a:hover{
     font-family:'times';
     position:absolute;
     top:54px;
-    left:110px;
+    left:150px;
 }
 
-/*
-.headerimage{
-    background-image:url(/homepagepic.jpg);
-    background-repeat:no-repeat;
-    height:200px;
-    width:800px;
+h2{
+    font-size:26px;
+    font-family:arial;
+    position:absolute;
+    left:150px;
+    margin-top:100px;
+}
+ 
+
+
+.blogpostcontainer{
+    background-color:white;
+    display:flex;
+    color:black;
+    justify-content:flex-start;
+    position:absolute;
+    right:150px;
+    bottom:150px; 
+    padding:20px 0px;
+    height:450px;
+    width:375px;
+}
+
+h3 a{
+    color:black;
+    text-decoration:none;
    
-} */
+}
+
+h3 a:hover{
+    color:gray;
+}
+
+
+
 /*
 .heading{
     text-align:left;
@@ -84,7 +111,6 @@ li a:hover{
 
 }
 */
-
 
 
 
