@@ -1,6 +1,6 @@
 <?php
 include('config/init.php');
-$blogPostId = 6;
+$blogPostId = $_REQUEST['blogPostId'];
 $blogPost = getBlogPost($blogPostId);
 echoHeader("Title of the blog post");
 echo "
