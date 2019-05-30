@@ -6,23 +6,23 @@
 
 
 $blogPosts = getAllBlogPosts();
-echo "
-  <h1></h1>
-";
+
 foreach($blogPosts as $blogPost){
-    echo "<a href='/view_post.php?blogPostId=".$blogPost['blogPostId']."'>
-        ".$blogPost['title']."
-    </a><br />";
+    echo "
+        <img src='homepagepic.jpg' class='homepic'>
+        <div class='blogpostcontainer'>
+            <a class='blogkids' href='/view_post.php?blogPostId'=".$blogPost['blogPostId']."'>
+        </div>   
+        
+        
+        ".$blogPost['title']."</a><br />";
 }
 
 ?>
 
 
-    <img src="homepagepic.jpg" class="homepic">
-    <div class='blogpostcontainer'>
-           
-        </div> 
-    </div>
+    
+   
 
 
     </body>

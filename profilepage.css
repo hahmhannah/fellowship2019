@@ -36,10 +36,10 @@ li a:hover{
 
 .homepic{
     position:absolute;
-    top:190px;
+    top:170px;
     margin-left:142px;
-    width:600px;
-    height:400px;   
+    width:650px;
+    height:450px;   
 }
 
 
@@ -71,16 +71,25 @@ h2{
 
 
 .blogpostcontainer{
-    background-color:white;
+    background-color:black;
     display:flex;
-    color:black;
-    justify-content:flex-start;
+    justify-content: flex-start;
+    color:pink;
     position:absolute;
     right:150px;
     bottom:150px; 
     padding:20px 0px;
     height:450px;
     width:375px;
+} 
+
+.blogkids{
+    display:flex;
+    font-size:20px;
+    background-color:pink;
+    width:35px;
+    height:35px;
+
 }
 
 h3 a{
@@ -93,6 +102,14 @@ h3 a:hover{
     color:gray;
 }
 
+a.blogkids:link{
+    color:black;
+    text-decoration:none;
+}
+
+a.blogkids:hover{
+    color:gray;
+}
 
 
 /*
