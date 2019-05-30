@@ -1,0 +1,136 @@
+
+/* *{
+    margin:0;
+    padding:0;
+} */
+
+body{
+    font-family:arial;
+    background-color:white;
+}
+
+.navbar{
+    list-style-type:none;
+    overflow:hidden;
+    height:15px;
+    margin-top:35px;
+    margin-right:150px;
+    text-align:center;       
+}
+
+li{
+    float:right;
+}
+
+li a{
+    color:black;
+    text-decoration:none;
+    padding:10px;
+    font-size:14px;
+    font-family:'arial';
+}
+
+li a:hover{
+    color:gray;
+}
+
+.homepic{
+    position:absolute;
+    top:170px;
+    margin-left:142px;
+    width:650px;
+    height:450px;   
+}
+
+
+.mainpage{
+    color:black;
+    font-size:40px;
+    font-family:times;
+    position:absolute;
+    top:0;
+    left:150px;   
+}
+
+.notes{
+    font-size:14px;
+    font-family:'times';
+    position:absolute;
+    top:54px;
+    left:150px;
+}
+
+h2{
+    font-size:26px;
+    font-family:arial;
+    position:absolute;
+    left:150px;
+    margin-top:100px;
+}
+ 
+
+
+.blogpostcontainer{
+    background-color:black;
+    display:flex;
+    justify-content: center;
+    color:pink;
+    position:absolute;
+    right:150px;
+    bottom:150px; 
+    padding:20px 0px;
+    height:450px;
+    width:375px;
+} 
+
+.blogkids{
+    display:flex;
+    font-size:20px;
+    background-color:pink;
+    width:35px;
+    height:35px;
+
+}
+
+h3 a{
+    color:black;
+    text-decoration:none;
+   
+}
+
+h3 a:hover{
+    color:gray;
+}
+
+a.blogkids:link{
+    color:black;
+    text-decoration:none;
+}
+
+a.blogkids:hover{
+    color:gray;
+}
+
+
+/*
+.heading{
+    text-align:left;
+    font-size:20px;
+    padding-top:30px;  
+}
+
+/*
+.heading{
+    background-color:rgb(230, 230, 230);
+    height:420px;
+    margin:100px 75px 75px ;
+    
+
+}
+*/
+
+
+
+
+
+
