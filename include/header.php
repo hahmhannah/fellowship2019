@@ -3,7 +3,7 @@
       echo "
       <html>
       <head>
-              <link href='profilepage.css' rel='stylesheet' type='text/css'> 
+            <link href='profilepage.css' rel='stylesheet' type='text/css'> 
       </head>
   
   

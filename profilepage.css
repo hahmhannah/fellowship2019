@@ -15,7 +15,8 @@ body{
     height:15px;
     margin-top:35px;
     margin-right:150px;
-    text-align:center;       
+    text-align:center;  
+        
 }
 
 li{
@@ -38,8 +39,8 @@ li a:hover{
     position:absolute;
     top:170px;
     margin-left:142px;
-    width:650px;
-    height:450px;   
+    width:680px;
+    height:460px;   
 }
 
 
@@ -69,30 +70,53 @@ h2{
 }
  
 
-
-.blogpostcontainer{
-    background-color:black;
-    display:flex;
-    justify-content: flex-start;
-    color:pink;
+.recentposts{
+    font-size:16px;
     position:absolute;
-    right:150px;
-    bottom:150px; 
-    padding:20px 0px;
-    height:450px;
-    width:375px;
-} 
-
-.blogkids{
-    display:flex;
-    font-size:20px;
-    background-color:pink;
-    width:35px;
-    height:35px;
-
+    right:255px;
+    top:150px;
 }
 
-h3 a{
+.kidlinks{
+    font-size:20px;
+    font-family: 'Raleway';
+    padding:20px;
+}
+
+
+a.kidlinks:link, a.kidlinks:visited{
+    color:black;
+    text-decoration:none;
+}
+
+a.kidlinks:hover{
+    color:gray;
+}
+
+.descr{
+    font-size:16px;
+    position:absolute;
+    left:150px;
+    top:200px;
+    padding-right:150px;
+    font-family:times;
+}
+
+/*
+.blogpostcontainer{
+    background-color:white;
+    color:black;
+    position:absolute;
+    right:0px;
+    bottom:167px; 
+    padding:20px 0px;
+    height:411px;
+    width:375px; 
+}  */
+
+
+/*
+ h3 a:link{
     color:black;
     text-decoration:none;
    
@@ -100,17 +124,8 @@ h3 a{
 
 h3 a:hover{
     color:gray;
-}
-
-a.blogkids:link{
-    color:black;
-    text-decoration:none;
-}
-
-a.blogkids:hover{
-    color:gray;
-}
-
+}  
+*/
 
 /*
 .heading{
