@@ -102,7 +102,7 @@ h2{
     font-family:arial;
     position:absolute;
     left:150px;
-    margin-top:150px;
+    margin-top:125px;
 }
  
 /* 
@@ -117,8 +117,9 @@ h2{
 
 .kidlinks{
     font-size:20px;
-    font-family: 'Raleway';
-    padding:20px;
+    font-family: 'arial';
+    margin-left:105px;
+    margin-right:105px;
 }
 
 
@@ -140,9 +141,6 @@ a.kidlinks:hover{
     font-family:times;
 }
 
-.posts{
-    background-color:blue;
-}
 
 .pic_child1{
     height:300px;

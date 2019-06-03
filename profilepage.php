@@ -4,8 +4,8 @@
     echoHeader("Home");
 
   
-    
-    ?> 
+     ?> 
+
 
 <html>
     <head>
@@ -15,10 +15,24 @@
        <img src='dosomethinggreat.jpg' class='homepagepic'> 
     </body> 
     
-
 </html>
-    
+
    
+
+<?php
+$blogPosts = getAllBlogPosts();
+
+foreach($blogPosts as $blogPost){
+    echo "
+        
+           
+       <div class='link_child'><a class='kidlinks' href='/viewpost.php?blogPostId=".$blogPost['blogPostId']."'>
+    
+        ".$blogPost['title']."</a></div><br />";
+}
+
+?>
+
 
 
    

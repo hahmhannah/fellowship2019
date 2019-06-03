@@ -23,8 +23,8 @@
             <div class='navbar_child'>
                 <ul class='navbar'>
                     <li><a href='http://localhost:8888/aboutme.php'>About Me</a></li>
-                    <li><a href='http://localhost:8888/projects.php'>Projects</a></li>
                     <li><a href='http://localhost:8888/morestuff.php'>Experiences</a></li>
+                    <li><a href='http://localhost:8888/projects.php'>Contact</a></li>
                 </ul>
             </div>
         </div>
