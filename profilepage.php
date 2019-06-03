@@ -1,32 +1,24 @@
-<h3 class='recentposts'>Recent Posts</h3>
-
+<!-- <h3 class='recentposts'>Recent Posts</h3> -->
 <?php
     include('config/init.php');
     echoHeader("Home");
 
+  
     
+    ?> 
+
+<html>
+    <head>
+    </head>
+
+    <body>
+       <img src='dosomethinggreat.jpg' class='homepagepic'> 
+    </body> 
     
 
-$blogPosts = getAllBlogPosts();
-
-foreach($blogPosts as $blogPost){
-    echo "
-        <img src='homepagepic.jpg' class='homepic'>
-           
-        <div><a class=kidlinks href='/viewpost.php?blogPostId=".$blogPost['blogPostId']."'></div>
-    
-        ".$blogPost['title']."</a><br />";
-}
-
-?>
-
-
+</html>
     
    
 
 
-    </body>
-
-
-
-</html>
+   
