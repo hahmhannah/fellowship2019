@@ -1,4 +1,4 @@
-<!-- <h3 class='recentposts'>Recent Posts</h3> -->
+
 <?php
     include('config/init.php');
     echoHeader("Home");
