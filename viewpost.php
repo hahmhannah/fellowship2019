@@ -5,9 +5,9 @@ $blogPost = getBlogPost($blogPostId);
 echoHeader("title of blog post"); 
 echo "
 
-    <h1>".$blogPost['blogPostTitle']."</h1>
-    <h1>".$blogPost['datePublished']."</h1>
-    <h1>".$blogPost['content']."</h1>
+    <h2>".$blogPost['blogPostTitle']."</h2>
+    <h5 class='blog_date'>".$blogPost['datePublished']."</h5>
+    <p class='descr'>".$blogPost['content']."</p>
 
 ";   
 ?>
