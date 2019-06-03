@@ -9,16 +9,13 @@
             array(
                 'blogPostId' => $blogPostId
                 ))->fetch();
-
             return $result;
     }
-
     function getAllblogPostIds(){
         $result = dbQuery('
             SELECT *
             FROM viewpost
         ',
             array())->fetchAll();
-
             return $result;
     }

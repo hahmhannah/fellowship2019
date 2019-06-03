@@ -28,7 +28,7 @@ foreach($blogPosts as $blogPost){
            
        <div class='link_child'><a class='kidlinks' href='/viewpost.php?blogPostId=".$blogPost['blogPostId']."'>
     
-        ".$blogPost['title']."</a></div><br />";
+        ".$blogPost['blogPostTitle']."</a></div><br />";
 }
 
 ?>
