@@ -67,7 +67,7 @@ li a:hover{
 .homepagepic{
     margin-left:auto;
     margin-right:auto;
-    margin-bottom:90px;
+    margin-bottom:50px;
     width:1000px;
     height:450px;
    /* box-shadow:2px 8px 10px 2px grey; */
@@ -120,6 +120,7 @@ h2{
     font-family: 'arial';
     margin-left:105px;
     margin-right:105px;
+    
 }
 
 
