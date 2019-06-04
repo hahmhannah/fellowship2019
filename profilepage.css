@@ -169,6 +169,54 @@ a.kidlinks:hover{
     padding-top:200px
 }
 
+.commentTitle{
+    position:absolute;
+    left:150px;
+    bottom:-110px;
+    font-size:25px;
+    
+}
+
+.commentSubmit{
+    position:absolute;
+    left:150px;
+    bottom:-210px;
+}
+
+.commentSection{
+    display:flex;
+    background-color:rgb(238, 235, 235);
+    height:200px;
+    width:1374px;
+    position:absolute;
+    top:775px;
+    margin-bottom:30px;
+    
+}
+
+/*
+.empty_2{
+    background-color:black;
+    height:300;
+    width:100%;
+} 
+
+.footer{
+ 
+    background-color:blue;
+    width:700px;
+    height:300px;
+} 
+
+/*
+.comment_parent{
+    background-color:blue;
+   
+   
+    width: 100%;
+} */
+
+
 
 /*
 .blogpostcontainer{

@@ -3,22 +3,14 @@
 include('config/init.php');
 
 if(isset($_REQUEST['newComment'])){
-    dbQuery(
-        '
-            INSERT INTO comments(author, content)
-            VALUES(:author, :content)
-        ',
-        [
-            'author' => $_REQUEST['author'],
-            'content' => $_REQUEST['content']
-        ]
-        );
+    insertNewComment(
+        $_REQUEST['author'],
+        $_REQUEST['content']
+    );
 }
 ?>
 
-<?php
-  //  var_dump($_REQUEST);
-?>
+
 
 <h4>Comments</h4>
 
