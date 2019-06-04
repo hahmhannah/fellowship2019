@@ -5,3 +5,4 @@ include('include/db_query.php'); //this should happen right after config so othe
 include('include/header.php');
 include('include/blog.php');
 include('include/viewpost.php');
+include('include/comments.php');
