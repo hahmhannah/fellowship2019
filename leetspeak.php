@@ -41,5 +41,5 @@
     }
     echo $leetSpokenWord;
 }
-  leetspeak('apple');
+  leetspeak('dragon');
 
