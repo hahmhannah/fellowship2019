@@ -11,7 +11,7 @@
 <html>
     <body>
         <p class='descr'>
-            Fall 2018: WAGS Volunteer <br><br>
+            Fall 2018: Campus Y WAGS Volunteer <br><br>
                         
             Fall 2018/Spring 2019: Korean Student Association Freshman Representative <br><br>
                        
