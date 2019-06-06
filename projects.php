@@ -2,7 +2,7 @@
     include('config/init.php');
     echoHeader("Projects");
         echo "
-            <h2>Contact Me</h2>
+            <h2>Get in touch</h2>
             <p class='descr'>
             School Email: h.hahm@wustl.edu
             <br><br>
