@@ -1,4 +1,8 @@
 <?php
-    function fixspacing($inputWord){
+    function fixSpacing($inputFile){
         
+
+        return $fixedFile;
     }
+
+    fixSpacing('file');
