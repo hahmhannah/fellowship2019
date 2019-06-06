@@ -27,7 +27,7 @@ if(isset($_REQUEST['newComment'])){
 <div class='commentSection'></div>
 
 
-        <h4 class='commentTitle'>Comments</h4>
+        <h4 class='commentTitle'>Leave a comment</h4>
 
         <form action='' method='post' class='commentSubmit'>
             
