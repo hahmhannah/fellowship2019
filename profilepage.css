@@ -27,9 +27,6 @@ body{
     display:flex;
 }
 
-@media only screen and (max-width:600px){
-    
-}
 
 .houseicon{
     width:40px;
@@ -115,11 +112,10 @@ a.kidlinks:link, a.kidlinks:visited{
     text-decoration:none;
 }
 
-/*  working responsive css example
 @media only screen and (max-width:600px){
-    a.kidlinks:link, a.kidlinks:visited{color:red; 
+    a.kidlinks:link, a.kidlinks:visited{color:darkcyan; 
     }
-} */ 
+} 
 
 a.kidlinks:hover{
     color:gray;
