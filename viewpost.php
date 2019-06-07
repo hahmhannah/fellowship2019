@@ -27,21 +27,13 @@ if(isset($_REQUEST['newComment'])){
 
 <div class='submitBox'></div>
 
-
-
-
-        <h4 class='commentTitle'>Leave a comment</h4>
-
+    <h4 class='commentTitle'>Leave a comment</h4>
         <form action='' method='post' class='commentSubmit'>
-            
             Name:
                 <input type='text' name='author' /><br />
-
             Comment:
                 <textarea name='content' rows='4' cols='30'></textarea><br />
-
-                <input type='submit' name='newComment' value='Submit Comment' />
-
+                 <input type='submit' name='newComment' value='Submit Comment' />
         </form>
         
 

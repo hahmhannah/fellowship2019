@@ -2,7 +2,7 @@
 
 function insertNewComment($author, $content){
     dbQuery(
-        '
+        '   
             INSERT INTO comments(author, content)
             VALUES(:author, :content)
         ',
@@ -17,14 +17,13 @@ function insertNewComment($author, $content){
 
 <?php
 
-function getAllNewComments(){
-   $result = dbQuery(
-        '
-        SELECT * 
-        FROM comments 
-        
-        '
-    ) -> fetchAll();
-    return $result;
+    function getAllNewComments(){
+    $result = dbQuery(
+            '
+            SELECT * 
+            FROM comments 
+            '
+        ) -> fetchAll();
+        return $result;
 
-}
+    }
