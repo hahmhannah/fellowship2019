@@ -1,0 +1,194 @@
+body{
+    font-family:arial;
+}
+
+.header_parent{
+    display:flex;
+    flex-wrap:wrap;
+    flex-direction:row;
+    align-self:center; 
+    background-color:#DFEFF7;
+    padding:0px;
+    justify-content:space-between;
+    margin:25px;
+    height:700px;
+}
+
+.navbar{
+    display:flex;
+    list-style-type:none;
+    overflow:hidden;
+    height:15px;
+    padding-left:330px;
+    margin-top:10px;       
+}
+
+.navbar_child{
+    display:flex;
+}
+
+
+.houseicon{
+    width:40px;
+    height:40px;
+    padding-right:500px;
+}
+
+.houseicon_child{
+    display:flex;
+    justify-content:flex-start;
+  
+}
+
+li{
+    float:right;
+}
+
+li a{
+    color:black;
+    text-decoration:none;
+    padding:10px;
+    font-size:14px;
+    font-family:'arial';
+}
+
+li a:hover{
+    color:gray;
+}
+
+.homepagepic{
+    margin-left:auto;
+    margin-right:auto;
+    margin-bottom:50px;
+    width:1000px;
+    height:450px;
+   
+}
+
+
+.mainpage{
+    color:black;
+    font-size:40px;
+    font-family:times;
+    text-align:center;
+    margin-top:6px;
+    margin-bottom:0px;
+
+     
+}
+
+.notes{
+    font-size:14px;
+    font-family:'times';
+    text-align:center;
+} 
+
+h2{
+    font-size:26px;
+    font-family:arial;
+    position:absolute;
+    left:148px;
+    margin-top:125px;
+}
+
+.blog_date{
+    position:absolute;
+    left:150px;
+    margin-top:155px;
+}
+
+
+.kidlinks{
+    font-size:20px;
+    font-family: 'times';
+    margin-left:105px;
+    margin-right:105px;
+    
+}
+
+
+a.kidlinks:link, a.kidlinks:visited{
+    color:black;
+    text-decoration:none;
+}
+
+@media only screen and (max-width:600px){
+    a.kidlinks:link, a.kidlinks:visited{color:darkcyan; 
+    }
+} 
+
+a.kidlinks:hover{
+    color:gray;
+}
+
+.descr{
+    font-size:16px;
+    position:absolute;
+    left:150px;
+    top:200px;
+    padding-right:150px;
+    font-family:times;
+}
+
+
+.pic_child1{
+    height:300px;
+    width:300px;
+    margin-left:100px;
+    padding-top:200px;
+}
+
+.pic_child2{
+    height:300px;
+    width:300px;
+    padding-top:200px
+}
+
+.pic_child3{
+    height:300px;
+    width:300px;
+    margin-right:100px;
+    padding-top:200px
+}
+
+.commentTitle{
+    position:absolute;
+    left:150px;
+    bottom:-80px;
+    font-size:20px;
+    
+}
+
+.commentSubmit{
+    position:absolute;
+    left:150px;
+    bottom:-170px;
+}
+
+.submitBox{
+    /* display:flex; */
+    background-color:rgb(238, 235, 235);
+    /* height:200px; */
+    width:1374px;
+    position:absolute;
+    top:780px;
+    margin-bottom:30px;
+    
+}
+
+.commentSection{
+/*make div for comments to show up under submit box*/
+    background-color:rgb(238, 235, 235);
+    width:1374px;
+    position:absolute;
+    top:950px;
+    margin-bottom:30px;
+    font-family:times;
+}
+
+.commentYeet{
+    color:blue;
+    margin-left:100px;
+    padding:15px;
+    
+} 
