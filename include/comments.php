@@ -12,3 +12,19 @@ function insertNewComment($author, $content){
         ]
         );
 }
+
+?>
+
+<?php
+
+function getAllNewComments(){
+   $result = dbQuery(
+        '
+        SELECT * 
+        FROM comments 
+        
+        '
+    ) -> fetchAll();
+    return $result;
+
+}

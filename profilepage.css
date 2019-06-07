@@ -172,7 +172,7 @@ a.kidlinks:hover{
 .commentTitle{
     position:absolute;
     left:150px;
-    bottom:-105px;
+    bottom:-80px;
     font-size:20px;
     
 }
@@ -180,21 +180,40 @@ a.kidlinks:hover{
 .commentSubmit{
     position:absolute;
     left:150px;
-    bottom:-210px;
+    bottom:-170px;
 }
 
-.commentSection{
-    display:flex;
+.submitBox{
+    /* display:flex; */
     background-color:rgb(238, 235, 235);
-    height:200px;
+    /* height:200px; */
     width:1374px;
     position:absolute;
-    top:775px;
+    top:780px;
     margin-bottom:30px;
     
 }
 
+.commentSection{
+/*make div for comments to show up under submit box*/
+    background-color:rgb(238, 235, 235);
+    width:1374px;
+    position:absolute;
+    top:950px;
+    margin-bottom:30px;
+    font-family:times;
 
+}
+
+
+.commentYeet{
+    color:blue;
+    
+ 
+  
+
+
+} 
 
 /*
 .empty_2{

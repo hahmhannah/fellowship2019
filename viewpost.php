@@ -24,7 +24,10 @@ if(isset($_REQUEST['newComment'])){
         );
 } 
 ?>
-<div class='commentSection'></div>
+
+<div class='submitBox'></div>
+
+
 
 
         <h4 class='commentTitle'>Leave a comment</h4>
@@ -40,6 +43,18 @@ if(isset($_REQUEST['newComment'])){
                 <input type='submit' name='newComment' value='Submit Comment' />
 
         </form>
+        
 
+
+<div class='commentSection'>
+    <?php
+        $allNewComments = getAllNewComments();
+        foreach($allNewComments as $newComment){
+            echo "
+            <div class=commentYeet>"
+            .$newComment['author'] . "<br>" . $newComment['content']. "</div>";
+        }
+    ?>
+</div>
 
 
