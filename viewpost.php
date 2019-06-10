@@ -7,7 +7,7 @@ echo "
 
     <h2>".$blogPost['blogPostTitle']."</h2>
     <h5 class='blog_date'>".$blogPost['datePublished']."</h5>
-    <p class='descr'>".$blogPost['content']."</p>
+    <p class='description'>".$blogPost['content']."</p>
 
 ";   
 
@@ -40,8 +40,8 @@ if(isset($_REQUEST['newComment'])){
 
 <div class='commentSection'>
     <?php
-        $allNewComments = getAllNewComments();
-        foreach($allNewComments as $newComment){
+        $allComments = getAllComments();
+        foreach($allComments as $newComment){
             echo "
             <div class=commentYeet>"
             .$newComment['author'] . "<br>" . $newComment['content']. "</div>";

@@ -9,7 +9,7 @@
 
 <html>
     <body>
-        <p class='descr'>
+        <p class='description'>
             Fall 2018: Campus Y WAGS Volunteer <br><br>            
             Fall 2018/Spring 2019: Korean Student Association Freshman Representative <br><br>
             Spring 2019: Gereau Lab Research Assistant <br><br>

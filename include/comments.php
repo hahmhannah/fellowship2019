@@ -17,7 +17,7 @@ function insertNewComment($author, $content){
 
 <?php
 
-    function getAllNewComments(){
+    function getAllComments(){
     $result = dbQuery(
             '
             SELECT * 

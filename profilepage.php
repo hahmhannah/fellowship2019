@@ -12,7 +12,7 @@
     </head>
 
     <body>
-       <img src='dosomethinggreat.jpg' class='homepagepic'> 
+       <img src='/images/dosomethinggreat.jpg' class='homepagepic'> 
     </body> 
     
 </html>

@@ -9,8 +9,8 @@
       <body>
             <div class='header_parent'>
                 <div class='houseicon_child'>
-                    <a href='http://localhost:8888/profilepage.php' class=houseiconlink>
-                        <img src='houseicon.png' class='houseicon'>
+                    <a href='/profilepage.php' class=houseiconlink>
+                        <img src='/images/houseicon.png' class='houseicon'>
                     </a>
             <div class='heading'>
                 <h1 class=mainpage>Hannah Hahm</h1>
@@ -18,9 +18,9 @@
             </div> 
             <div class='navbar_child'>
                 <ul class='navbar'>
-                    <li><a href='http://localhost:8888/aboutme.php'>About Me</a></li>
-                    <li><a href='http://localhost:8888/morestuff.php'>Experiences</a></li>
-                    <li><a href='http://localhost:8888/projects.php'>Contact</a></li>
+                    <li><a href='/aboutme.php'>About Me</a></li>
+                    <li><a href='/morestuff.php'>Experiences</a></li>
+                    <li><a href='/projects.php'>Contact</a></li>
                 </ul>
             </div>
         </div>
