@@ -78,6 +78,7 @@ li a:hover{
 }
 
 .notes{
+   /* position:absolute; */
     font-size:14px;
     font-family:'times';
     text-align:center;
