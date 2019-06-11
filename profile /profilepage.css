@@ -113,7 +113,7 @@ a.kidlinks:link, a.kidlinks:visited{
 }
 
 @media only screen and (max-width:600px){
-    a.kidlinks:link, a.kidlinks:visited{color:darkcyan; 
+    a.kidlinks:link, a.kidlinks:visited{color:turquoise; 
     }
 } 
 
