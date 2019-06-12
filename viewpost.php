@@ -2,7 +2,7 @@
 include('config/init.php');
 $blogPostId = $_REQUEST['blogPostId'];
 $blogPost = getBlogPost($blogPostId);
-echoHeader("title of blog post"); 
+echoHeader("" .$blogPost['blogPostTitle']); 
 echo "
 
     <h2>".$blogPost['blogPostTitle']."</h2>
@@ -25,6 +25,17 @@ if(isset($_REQUEST['newComment'])){
 } 
 ?>
 
+<div class='commentSection'>
+    <?php
+        $allComments = getAllComments();
+        foreach($allComments as $newComment){
+            echo "
+            <div class=commentYeet>"
+            .$newComment['author'] . "<br>" . $newComment['content']. "</div>";
+        }
+    ?>
+</div>
+
 <div class='submitBox'></div>
 
     <h4 class='commentTitle'>Leave a comment</h4>
@@ -38,15 +49,6 @@ if(isset($_REQUEST['newComment'])){
         
 
 
-<div class='commentSection'>
-    <?php
-        $allComments = getAllComments();
-        foreach($allComments as $newComment){
-            echo "
-            <div class=commentYeet>"
-            .$newComment['author'] . "<br>" . $newComment['content']. "</div>";
-        }
-    ?>
-</div>
+
 
 
