@@ -3,14 +3,17 @@
     padding:0;
 }
 
-
+.navBar{
+    height:55px;
+    background-color:#54544F;
+}
 
 .homePage{
-    background-color:#FFFDEB;
-    height:100%;
-    /* text-align:center; */
+    background-image:url('/images/homepagepic5-copy.jpeg');
+    background-repeat: no-repeat;
+    height:93%;
+    
+   
+
 }
 
-.welcomeSign{
-    text-align:center;
-}
