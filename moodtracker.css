@@ -6,15 +6,76 @@
 .navBar{
     height:55px;
     background-color:#54544F;
+    list-style-type: none; 
 }
+
+.navBarParent{
+    display:flex; 
+    justify-content:space-between;
+    list-style-type: none;
+    flex-wrap:wrap;
+    
+    padding:0 10px;
+} 
+ 
+.navBarChild1{
+    display:flex;
+    justify-content:space-between;
+    padding:12px;
+}
+
+.navAbout, .navResources, .navHowItWorks{
+    padding-right:20px;
+}
+
+.navBarChild2{
+    display:flex;
+    justify-content:space-between;
+    padding:12px;
+}
+
+.navLogin, .navSignUp{
+    padding-left:20px;
+}
+
+li{
+    font-size:20px;  
+}
+ 
+
+a{
+    text-decoration:none;
+}
+
+li a:link {
+    color:white;
+    text-decoration:none;
+    
+}
+
+li a:visited{
+    color:white;
+    text-decoration:none;
+}
+
+li a:hover{
+    color:lightgray;
+    text-decoration:none;
+}
+
+li a:active{
+    color:white;
+    text-decoration:none;
+}
+
+
+
 
 .homePage{
     background-image:url('/images/homepagepic5-copy.jpeg');
     background-repeat: no-repeat;
     height:93%;
     text-align:center;
-
-  
 }
 
 .frontPageAmbiance{
@@ -27,3 +88,25 @@
     font-family:'Imprima';
     font-size:22px;
 }
+
+.homePageAboutDivTitle{
+    height:300px;
+    background-color:lightskyblue;
+
+}
+
+.homePageResourcesDivTitle{
+    height:400px;
+    background-color:lightgoldenrodyellow;
+}
+
+.homePageHowItWorksDivTitle{
+    height:350px;
+    background-color:lightpink;
+}
+
+.homePageDivExtra{
+    height:200px;
+    background-color:lightcyan;
+}
+
