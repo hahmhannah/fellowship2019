@@ -12,8 +12,18 @@
     background-image:url('/images/homepagepic5-copy.jpeg');
     background-repeat: no-repeat;
     height:93%;
-    
-   
+    text-align:center;
 
+  
 }
 
+.frontPageAmbiance{
+    font-family:'Imprima';
+    font-size:56px;
+    padding-top:260px; 
+}
+
+.frontPageMiniText{
+    font-family:'Imprima';
+    font-size:22px;
+}
