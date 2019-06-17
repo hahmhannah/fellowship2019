@@ -132,4 +132,20 @@ li a:active{
     
 }
 
+.linkButton{
+    background-color:#636E6E;
+    width:175px;
+    height:50px;
+    margin:auto;
+    margin-top:350px;
+
+}
+
+.linkButtonText{
+    font-family:'Imprima';
+    font-size:20px;
+    padding-top:12px;
+    
+    }
+
 
