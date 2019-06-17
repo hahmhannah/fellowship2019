@@ -5,10 +5,10 @@
         <div class='navBar'>
             <ul class='navBarParent'>
                 <div class='navBarChild1'>
-                    <li class='navAbout'><a href='#'>about</a></li>
-                    <li class='navHowItWorks'><a href='#'>how it works</a></li>
-                    <li class='navResources'><a href='#'>resources</a></li>
-                    <li class='navExtra'><a href='#'>extra</a></li>
+                    <li class='navAbout'><a href='#anchor1'>about</a></li>
+                    <li class='navHowItWorks'><a href='#anchor2'>how it works</a></li>
+                    <li class='navResources'><a href='#anchor3'>resources</a></li>
+                    <li class='navExtra'><a href='#anchor4'>extra</a></li>
                 </div> 
                 <div class='navBarChild2'>   
                     <li class='navLogin'><a href='#'>login</a></li>
@@ -23,19 +23,19 @@
         </div>
 
        <div class='homePageDivAbout'>
-            <h2 class='homePageAboutDivTitle'>about this website</h2>
+           <h2 class='homePageAboutDivTitle'><a name='anchor1'>about this website</a></h2>
         </div>   
 
-        <div class='homePageDivResources'>
-            <h2 class='homePageResourcesDivTitle'>resources</h2>
+        <div class='homePageDivHowItWorks'>
+            <h2 class='homePageHowItWorksDivTitle'><a name='anchor2'>how it works</a></h2>
         </div>  
 
-        <div class='homePageDivHowItWorks'>
-            <h2 class='homePageHowItWorksDivTitle'>how it works</h2>
-        </div>  
+        <div class='homePageDivResources'>
+            <h2 class='homePageResourcesDivTitle'><a name='anchor3'>resources</a></h2>
+        </div> 
 
         <div class='homePageDivExtra'>
-            <h2 class='homePageExtraTitle'>extra space</h2>
+            <h2 class='homePageExtraTitle'><a name='anchor4'>extra space</a></h2>
                 <p>maybe footer/add login button</p>
         </div> 
 
