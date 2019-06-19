@@ -38,7 +38,7 @@
 
         <div class='homePageDivResources'>
             <h2 class='homePageResourcesDivTitle'><a name='anchor3'>resources</a></h2>
-                <?php echoLinkButton("Resources"); ?>
+                <?php echoLinkButton("http://localhost:8888/resources.php", "Resources"); ?>
         </div> 
 
         <div class='homePageDivExtra'>
