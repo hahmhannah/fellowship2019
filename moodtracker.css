@@ -133,11 +133,12 @@ li a:active{
 }
 
 .linkButton{
-    background-color:#636E6E;
+    background-color:rgb(101, 111, 111, 0.1);
     width:175px;
     height:50px;
     margin:auto;
     margin-top:350px;
+    border:1px solid black;
 
 }
 
