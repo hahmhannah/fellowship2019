@@ -7,3 +7,4 @@ include('include/blog.php');
 include('include/viewpost.php');
 include('include/comments.php');
 include('include/linkButton.php');
+include('include/trackerHeader.php');

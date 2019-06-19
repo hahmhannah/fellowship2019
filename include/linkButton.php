@@ -28,12 +28,13 @@
         
   
 
-    function echoLinkButton($pageTitle){
+    function echoLinkButton($linkButtonArray){
+        $linkButtonArray = array($link, $pageTitle);
         echo "
             <html>
                 <head><link href='moodtracker.css' rel='stylesheet' type='text/css'></head>    
                     <body>
-                       <div class='linkButton'> <h2 class='linkButtonText'>" .$pageTitle. "</div>
+                      <a href='" .$linkButtonArray[0]."' class='linkButton'> <h2 class='linkButtonText'>" .$linkButtonArray[1]. "</h2></a>
                     
         ";
     }
