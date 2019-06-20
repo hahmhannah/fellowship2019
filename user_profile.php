@@ -1,4 +1,4 @@
 <?php
     include('config/init.php');
-
-    echo "hello user # ".$_REQUEST['userId'];
+   
+    echo "hello user # ".$_SESSION['userId'];
