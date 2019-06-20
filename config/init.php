@@ -6,3 +6,4 @@ include('include/header.php');
 include('include/blog.php');
 include('include/viewpost.php');
 include('include/comments.php');
+include('include/user.php');
