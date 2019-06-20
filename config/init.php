@@ -8,3 +8,4 @@ include('include/viewpost.php');
 include('include/comments.php');
 include('include/linkButton.php');
 include('include/trackerHeader.php');
+include('include/trackerSignUp.php');
