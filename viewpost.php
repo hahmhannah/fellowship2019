@@ -27,7 +27,7 @@ if(isset($_REQUEST['newComment'])){
 
 <div class='commentSection'>
     <?php
-        $allComments = getAllComments();
+        $allComments = getAllComments(); //get specific comments function
         foreach($allComments as $newComment){
             echo "
             <div class=commentYeet>"
