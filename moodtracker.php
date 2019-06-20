@@ -22,6 +22,7 @@
         <div class='homePageDivResources'>
             <h2 class='homePageResourcesDivTitle'><a name='anchor3'>resources</a></h2>
                 <?php echoLinkButton("/resources.php", "resources"); ?>
+                
         </div> 
 
         <div class='homePageDivExtra'>
