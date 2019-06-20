@@ -89,46 +89,47 @@ li a:active{
 
 .homePageDivAbout{
     height:500px;
-    background-color:#C4D1D0;
+    background-color:rgb(196, 209, 208, 0.6);
     text-align:center;
 }
 
 .homePageAboutDivTitle{
     font-size:30px;
-    padding-top:20px;
+    padding-top:70px;
 
 }
 .homePageDivResources{
     height:500px;
-    background-color:#E5D4C2;
+    background-color:rgb(229, 212, 194, 0.6);
     text-align:center;
 }
 
 .homePageResourcesDivTitle{
     font-size:30px;
-    padding-top:20px;
+    padding-top:70px;
 }
 
 .homePageDivHowItWorks{
     height:500px;
-    background-color:#D9DED4;
+    background-color:rgb(217, 222, 212, 0.7);
     text-align:center;
 }
 
 .homePageHowItWorksDivTitle{
     font-size:30px;
-    padding-top:20px;
+    padding-top:70px;
 }
 
 .homePageDivExtra{
     height:200px;
     background-color:#636E6E;
     text-align:center;
+
 }
 
 .homePageDivExtraTitle{
     font-size:30px;
-    padding-top:20px; 
+    padding-top:40px; 
     
 }
 

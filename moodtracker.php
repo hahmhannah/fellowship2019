@@ -11,7 +11,7 @@
 
        <div class='homePageDivAbout'>
            <h2 class='homePageAboutDivTitle'><a name='anchor1'>about this website</a></h2>
-                <?php echoLinkButton("/aboutTracker.php", "about"); ?>
+                <?php // echoLinkButton("/aboutTracker.php", "about"); ?>
         </div>   
 
         <div class='homePageDivHowItWorks'>
@@ -25,7 +25,7 @@
         </div> 
 
         <div class='homePageDivExtra'>
-            <h2 class='homePageExtraTitle'><a name='anchor4'>extra space</a></h2>
+            <h2 class='homePageExtraTitle'><a name='anchor4'>Contact Us</a></h2>
                 <p>maybe footer/add login button</p>
                     
         </div> 
