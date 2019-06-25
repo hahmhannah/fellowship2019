@@ -1,6 +1,8 @@
 <?php
     include('config/init.php');
     echoTrackerHeader("Login");
-?>
 
-sadlfknal;wefj;alksflaksd;flkadfs
+
+echo "hello user # ".$_SESSION['accountId'];
+
+?>
