@@ -6,7 +6,7 @@
 
         <div class='homePage'>
             <h1 class='frontPageAmbiance'>ambiance</h1>
-                <p class='frontPageMiniText'></p>
+                <p class='frontPageMiniText'>a tracker</p>
         </div>
 
        <div class='homePageDivAbout'>

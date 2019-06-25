@@ -17,7 +17,7 @@
                                 <li class='navResources'><a href='#anchor3'>resources</a></li>
                             </div> 
                             <div class='navBarChild2'>   
-                                <li class='navLogin'><a href='#'>login</a></li>
+                                <li class='navLogin'><a href='/trackerLogin.php'>login</a></li>
                                 <li class='navSignUp'><a href='/trackerSignUp.php'>sign up</a></li>
                             </div>
                         </ul>       

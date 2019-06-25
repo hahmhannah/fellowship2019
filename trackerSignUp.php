@@ -14,9 +14,9 @@ if(isset($_REQUEST['newAccount'])){
 ?>
 
 <body class='signUpPageBody'>
-    <div class='formDiv'>
+    <div class='signUpFormDiv'>
         <h2 class='signUpTitle'>Sign Up</h2>
-            <form action='' method='post'> <!--post means nothing in url-->
+            <form action='/userLoggedIn.php' method='post'> <!--post means nothing in url-->
                 Email: <input type='text' name='email' /><br /><br />
                 Password: <input type='password' name='password' /><br /><br />
                 <input type='submit' name='newAccount' value='Sign Up' />
