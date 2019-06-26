@@ -27,7 +27,9 @@
 
         <div class='homePageDivExtra'>
             <h2 class='homePageExtraTitle'><a name='anchor4'>Contact Us</a></h2>
-                <p>maybe footer/add login button</p>
+                <p>more info to come soon</p><br>
+                <p>h.hahm@wustl.edu</p> <br>
+                
                     
         </div> 
 

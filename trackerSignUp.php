@@ -1,9 +1,6 @@
 <?php
     include('config/init.php');
 
-    echoTrackerHeader("Sign Up");
-
-
 if(isset($_REQUEST['newAccount'])){
     insertNewAccount(
         $_REQUEST['email'],
@@ -11,6 +8,19 @@ if(isset($_REQUEST['newAccount'])){
     );
 }
 
+
+
+/*
+//hashing: take a string and turn it into gibberish code--can't get the original thing back 
+//everytime u hash something u get the same code
+    checking if hashes match in the database
+       $hashedPassword = sha1($password); then just save this into database 
+       then u have to turn inputted password into hash and u have to compare hashes 
+
+
+*/
+
+echoTrackerHeader("Sign Up");
 ?>
 
 <body class='signUpPageBody'>

@@ -1,22 +1,36 @@
 <?php
     include('config/init.php');
-    echoTrackerHeader("Login");
+   //form stuff always comes first-can't redirect if u echo something first 
 
-
-if(isset($_REQUEST['attemptLogin'])){
-  $accountId = attemptLogin($_REQUEST['email'], $_REQUEST['password']);
-  $_SESSION['accountId'] = $accountId;
-    // if(//make email and password equal to the ones in the database)
+ // $formSubmissionWorked = false;
+                    //atttemptlogin here is a key/index
+if(isset($_REQUEST['attemptLogin'])){  //button is called attemptlogin, if it is submitted, then form is processed 
+  $accountId = attemptLogin($_REQUEST['email'], $_REQUEST['password']); //equals whatever is returned from attemptLogin function--as soon as something is returned,function stops 
+  //values that were submitted into the form are parameters of function--will return account id or null
+  
+  if($accountId > 0){
+    $_SESSION['accountId'] = $accountId;
     echo "
     You are logged in as ".$accountId.".
     ";
     exit;
-}
+  }
+  else{ 
+    echo "
+    Error: Invalid email and password. Try again. 
+    ";
 
+  }
+  
+  
+};
+
+
+echoTrackerHeader("Login");
 ?>
 
 
-<html>
+
     <body class='loginPageBody'>
       <form action='' method='post'>
         <div class='loginFormDiv'>
@@ -27,3 +41,5 @@ if(isset($_REQUEST['attemptLogin'])){
         </div>
       </form>
     </body>
+
+    <!--form values from ^ inputs get inputted into REQUEWSt-->

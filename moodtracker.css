@@ -89,7 +89,7 @@ li a:active{
 
 .homePageDivAbout{
     height:500px;
-    background-color:rgb(196, 209, 208, 0.6);
+    background-color:rgb(196, 209, 208, 0.7);
     text-align:center;
 }
 
@@ -100,61 +100,56 @@ li a:active{
 }
 .homePageDivResources{
     height:500px;
-    background-color:rgb(229, 212, 194, 0.6);
+    background-color:rgb(229, 212, 194, 0.7);
     text-align:center;
 }
 
 .homePageResourcesDivTitle{
     font-size:30px;
-    padding-top:70px;
+    padding-top:35px;
 }
 
 .homePageDivHowItWorks{
     height:500px;
-    background-color:rgb(217, 222, 212, 0.7);
+    background-color:rgb(217, 222, 212, 0.9);
     text-align:center;
 }
 
 .homePageHowItWorksDivTitle{
     font-size:30px;
-    padding-top:70px;
+    padding-top:35px;
 }
 
 .homePageDivExtra{
     height:200px;
     background-color:#636E6E;
     text-align:center;
+    padding-top:25px;
 
 }
 
 .homePageDivExtraTitle{
     font-size:30px;
-    padding-top:40px; 
+     
     
 }
 
 .linkButton{
-   /* background-color:rgb(101, 111, 111, 0.1); */
-    background-color:pink;
+    background-color:rgb(101, 111, 111, 0.1); 
     color: black;
-    padding: 14px 25px;
+    margin-top: 315px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
+    border:1px solid black;
   }
-  /*
-    width:175px;
-    height:50px;
-    margin:auto;
-    margin-top:350px;
-    /* border:1px solid black; */
 
 
 
 .linkButtonText{
     font-family:'Imprima';
     font-size:20px;
-    padding-top:12px;
+    padding: 12px 5px 12px 5px;
     
     }
 
@@ -200,4 +195,12 @@ li a:active{
     margin-top:120px;
     margin-left:450px;
     font-size:20px;
+}
+
+.howItWorksBody{
+    background-color:rgb(217, 222, 212, 0.8);
+}
+
+.resourcesBody{
+    background-color:rgb(229, 212, 194, 0.7);
 }
