@@ -1,4 +1,5 @@
 <?php
+session_start();
     include('config/init.php');
 
 if(isset($_REQUEST['newAccount'])){

@@ -1,11 +1,17 @@
-<?php
+<?php 
 
-function getUserCode($code){
-    $userList = [
-        '12345678910' => 2
-    ];
-    return $userList[$code];
+function getUser($accountId){
+    $user = dbQuery('
+    SELECT * 
+    FROM trackerSignUp
+    WHERE email = :email AND password = :password', 
+    [
+        'email' => $email,
+        'password' => $password
+    ])->fetch();                             
+return @$user['accountId'];
 }
+
 
 
 function attemptLogin($email, $password){
