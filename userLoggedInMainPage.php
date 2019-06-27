@@ -12,9 +12,9 @@ echo "hello user".$accountId." More coming soon."; */
 
 
 
-$accountId=$_SESSION['accountId'];
 
-echo /*"hello user".$accountId['email'].". */ "More coming soon.";
+
+echo "hello user ".$_SESSION['accountId']['email'].". More coming soon.";
 
 
 
