@@ -6,24 +6,26 @@ function getUser($accountId){
     FROM trackerSignUp
     WHERE accountId = :accountId', 
     [
-        'accountId' => $accountId
+        'accountId' => $accountId, 
+        
     ])->fetch();                             
-return @$user['accountId'];
+return @$user;
 }
 
 
 
-function attemptLogin($email, $password){
-    $accountId = dbQuery('
-        SELECT * 
+function attemptLogin($email, $password){ 
+    $result = dbQuery('
+        SELECT accountId
         FROM trackerSignUp
         WHERE email = :email AND password = :password', //just a string parameter
         [
             'email' => $email,
             'password' => $password
-        ])->fetch();                             //where email/password matches -case insensitive email
-    return $accountId;
-}
+            
+        ])->fetch();                            //where email/password matches -case insensitive email
+    return $result['accountId'];
+}    
 
 
 /*

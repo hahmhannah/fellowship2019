@@ -1,5 +1,4 @@
 <?php
-  session_start();
     include('config/init.php');
    //form stuff always comes first-can't redirect if u echo something first 
 
@@ -10,10 +9,15 @@ if(isset($_REQUEST['attemptLogin'])){  //button is called attemptlogin, if it is
   //values that were submitted into the form are parameters of function--will return account id or null
 
   if($accountId > 0){
-    $_SESSION['accountId'] = $accountId;
-    echo " 
-    You are logged in as ".$accountId['email'].". Go to your <a href='/userLoggedInMainPage.php'>homepage</a>.
-    ";
+    //$_SESSION['accountId'] = $accountId; 
+    $user = getUser($accountId); 
+    $_SESSION['accountId'] = $user; 
+    
+    var_dump($user);
+   
+    echo "  
+    You are logged in as ".$user['email'].". Go to your <a href='/userLoggedInMainPage.php'>homepage</a>.
+    "; 
     exit;
   }
   else{ 
