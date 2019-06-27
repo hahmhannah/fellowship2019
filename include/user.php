@@ -2,12 +2,11 @@
 
 function getUser($accountId){
     $user = dbQuery('
-    SELECT * 
+    SELECT *
     FROM trackerSignUp
-    WHERE email = :email AND password = :password', 
+    WHERE accountId = :accountId', 
     [
-        'email' => $email,
-        'password' => $password
+        'accountId' => $accountId
     ])->fetch();                             
 return @$user['accountId'];
 }

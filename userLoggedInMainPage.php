@@ -2,11 +2,19 @@
     include('config/init.php');
     echoTrackerHeader("Login");
 
-$accountId=getUser($_REQUEST['accountId']); //save number in url as variable
-$_SESSION['accountId']=$accountId;
+ 
+//$accountId=getUser($_REQUEST['accountId']); //save number in url as variable
+/* $accountId=$_SESSION['accountId'];
 
-echo "hello user".$_SESSION['accountId'].". More coming soon.";
 
+
+echo "hello user".$accountId." More coming soon."; */
+
+
+
+$accountId=$_SESSION['accountId'];
+
+echo /*"hello user".$accountId['email'].". */ "More coming soon.";
 
 
 
