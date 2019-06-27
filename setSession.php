@@ -1,4 +1,4 @@
-<?php
+<?php /*
 include('config/init.php');
 
-$_SESSION['this is a test'] = "hello";
+$_SESSION['this is a test'] = "hello"; */
