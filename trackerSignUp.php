@@ -13,7 +13,7 @@ if(isset($_REQUEST['newAccount'])){
 /*
 //hashing: take a string and turn it into gibberish code--can't get the original thing back 
 //everytime u hash something u get the same code
-    checking if hashes match in the database
+    checking if hash outputs match in the database
        $hashedPassword = sha1($password); then just save this into database 
        then u have to turn inputted password into hash and u have to compare hashes 
 

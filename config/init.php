@@ -11,3 +11,6 @@ include('include/linkButton.php');
 include('include/trackerHeader.php');
 include('include/trackerSignUp.php');
 include('include/user.php');
+include('include/loggedInHeader.php');
+include('include/profilePage.php');
+include('include/questionnaire.php');
