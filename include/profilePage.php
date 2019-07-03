@@ -1,19 +1,19 @@
-<?php
+<?php /*
 
-function insertNewProfileEdit($accountId, $age, $gender, $occupation, $stressLevel, $typeBeverage, $beverageOther){
+function insertNewProfileEdit($accountId, $age, $gender, $occupation, $occupationStressLevel, $typeBeverage, $beverageOther){
     dbQuery(
         '   
-            INSERT INTO profilePage(accountId, age, gender, occupation, stressLevel, typeBeverage, beverageOther)
-            VALUES(:accountId, :age, :gender, :occupation, :stressLevel, :typeBeverage, :beverageOther)
+            INSERT INTO profilePage(accountId, age, gender, occupation, occupationStressLevel, typeBeverage)
+            VALUES(:accountId, :age, :gender, :occupation, :occupationStressLevel, :typeBeverage)
         ',
         [
             'accountId' => $accountId,
             'age' =>  $age, 
             'gender' => $gender, 
-            'occupation'=> $occupation, 
+            'occupationStressLevel'=> $occupationStressLevel, 
             'stressLevel' => $stressLevel, 
             'typeBeverage' => $typeBeverage, 
-            'beverageOther' => $beverageOther
+            
         ]
         );
 }
@@ -30,3 +30,4 @@ function getProfileEdit($accountId){
 }
 
 
+//this can go into main user */

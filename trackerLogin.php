@@ -11,8 +11,8 @@ if(isset($_REQUEST['attemptLogin'])){  //button is called attemptlogin, if it is
   if($accountId > 0){
     //$_SESSION['accountId'] = $accountId; 
     $user = getUser($accountId); 
-    $_SESSION['accountId'] = $user; 
-    
+    $_SESSION['accountId'] = $user['accountId']; 
+    //this is an array                  //index/key
    
    
     echo "  

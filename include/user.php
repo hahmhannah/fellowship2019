@@ -9,7 +9,7 @@ function getUser($accountId){
         'accountId' => $accountId, 
         
     ])->fetch();                             
-return @$user;
+return @$user; //this is an array
 }
 
 
@@ -28,6 +28,34 @@ function attemptLogin($email, $password){
 }    
 
 
+
+function insertNewProfileEdit($email, $age, $gender, $occupation, $occupationStressLevel, $typeBeverage, $beverageOther){
+dbQuery(
+        '   
+            UPDATE trackerSignUp
+            SET  age = :age,
+            gender = :gender, 
+            occupation = :occupation, 
+            occupationStressLevel = :occupationStressLevel, 
+            typeBeverage = :typeBeverage, 
+            beverageOther = :beverageOther
+            WHERE email = :email
+        ',
+        [   'age' => $age,
+            'gender' => $gender, 
+            'occupation' => $occupation, 
+            'occupationStressLevel' => $occupationStressLevel, 
+            'typeBeverage' => $typeBeverage, 
+            'beverageOther' => $beverageOther,
+            'email' => $email
+
+        ]
+       
+        );
+}
+
+
+
 /*
 function attemptLogin($a, $password){
     $accountId = dbQuery('
@@ -39,4 +67,27 @@ function attemptLogin($a, $password){
         ]);  //where email/password matches -case insensitive email
     return $accountId;
 }
+*/
+
+
+/*function insertNewProfileEdit($accountId, $age, $gender, $occupation, $occupationStressLevel, $typeBeverage, $beverageOther){
+    dbQuery(
+        '   
+            UPDATE trackerSignUp(age, gender, occupation, occupationStressLevel, typeBeverage, beverageOther)
+            VALUES( :age, :gender, :occupation, :occupationStressLevel, :typeBeverage, :beverageOther)
+            WHERE account
+        ',
+        [
+            
+            'age' =>  $age, 
+            'gender' => $gender, 
+            'occupationStressLevel'=> $occupationStressLevel, 
+            'stressLevel' => $stressLevel, 
+            'typeBeverage' => $typeBeverage, 
+            'beverageOther' => $beverageOther
+            
+        ]
+        );
+}
+
 */

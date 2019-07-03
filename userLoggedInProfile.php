@@ -6,14 +6,17 @@
     //$_SESSION['accountId'] = $user; 
 
   
-echo " 
+/* echo " 
 
 
 hello user ".$user['email'].". More coming soon.";
 
+
+*/
+/*
 $accountId = $_SESSION['accountId'];
-$profileEdit = getProfileEdit($accountId);
-echo $profileEdit; 
+$profileEdit = getProfileEdit($accountId); //returns whole line from database
+echo $profileEdit;  */
 
 ?>
 
@@ -23,8 +26,8 @@ echo $profileEdit;
 <html>
   <h2>profile page</h2>
     <form action='' method='post'>  
-            Account ID:
-            <input type='text' name='accountId' /><br />
+            Email:
+            <input type='text' name='email' value= '<?php echo $user['email'] ?> '  /><br />
 
             Age:
             <input type='text' name='age' /><br />

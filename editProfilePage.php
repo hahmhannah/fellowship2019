@@ -1,15 +1,15 @@
 <?php  
     include('config/init.php');
     echologgedInHeader("edit profile");
-
-
+    $user = getUser($_SESSION['accountId']); 
+  //because defined here, don't have to use request
 if(isset($_REQUEST['newProfileEdit'])){
     insertNewProfileEdit(
-        $_REQUEST['accountId'],
+        $_REQUEST['email'],
         $_REQUEST['age'],
         $_REQUEST['gender'],
         $_REQUEST['occupation'],
-        $_REQUEST['stressLevel'],
+        $_REQUEST['occupationStressLevel'],
         $_REQUEST['typeBeverage'],
         $_REQUEST['beverageOther']
         );
@@ -20,20 +20,20 @@ if(isset($_REQUEST['newProfileEdit'])){
 <html>
   <h2>profile edit</h2>
     <form action='' method='post'>  
-            Account ID:
-            <input type='text' name='accountId' /><br />
+            Email:
+            <input type='text' required name='email' value= '<?php echo $user['email'] ?> '/><br />
 
             Age:
-            <input type='text' name='age' /><br />
+            <input type='text' required name='age' /><br />
 
             Gender:
-            <input type='text' name='gender' /><br />
+            <input type='text' required name='gender' /><br />
             
             Occupation:
-            <input type='text' name='occupation' /><br />
+            <input type='text' required name='occupation' /><br />
 
             Occupation Stress Level:
-                <select name='stressLevel'>
+                <select name='occupationStressLevel'>
                     <option value='low'>little to no stress</option>
                     <option value='medium'>some/moderate stress</option>
                     <option value='high'>High stress</option>
@@ -48,7 +48,7 @@ if(isset($_REQUEST['newProfileEdit'])){
                 </select><br /> 
             
             If other, please specify below:
-                <input type='text' name='beverageOther' /><br />
+                <input type='text' required  name='beverageOther' /><br />
 
 
                 <br/><br/>
@@ -57,4 +57,4 @@ if(isset($_REQUEST['newProfileEdit'])){
             <br/><br/>
             <input type='submit' name='newProfileEdit' value='edit profile' />
 
-
+ </form>
