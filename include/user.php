@@ -56,7 +56,7 @@ dbQuery(
         );
 }
 
-function insertNewHappinessQuestionnaireInput($email, $happinessQuestion1, $happinessQuestion2, $happinessQuestion3, $happinessQuestion4){
+function insertNewHappinessQuestionnaireInput($accountId, $happinessQuestion1, $happinessQuestion2, $happinessQuestion3, $happinessQuestion4){
     dbQuery(
         '   
             UPDATE trackerSignUp
@@ -65,13 +65,13 @@ function insertNewHappinessQuestionnaireInput($email, $happinessQuestion1, $happ
             happinessQuestion2 = :happinessQuestion2, 
             happinessQuestion3 = :happinessQuestion3,
             happinessQuestion4 = :happinessQuestion4
-            WHERE email = :email
+            WHERE accountId = :accountId
         ',
         [   'happinessQuestion1' => $happinessQuestion1,
             'happinessQuestion2' => $happinessQuestion2, 
             'happinessQuestion3' => $happinessQuestion3, 
             'happinessQuestion4' => $happinessQuestion4,
-            'email' => $email
+            'accountId' => $accountId
         ]
        
         );

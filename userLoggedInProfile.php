@@ -2,7 +2,7 @@
     include('config/init.php');
     echologgedInHeader("Profile");
     $user = getUser($_SESSION['accountId']); 
-
+    $accountId = $user['accountId'];
     // $user = getUser($accountId); 
     //$_SESSION['accountId'] = $user; 
 
@@ -24,7 +24,7 @@ echo $profileEdit;  */
 
 if(isset($_REQUEST['happinessQuestionnaireInput'])){
     insertNewHappinessQuestionnaireInput(
-        $_REQUEST['email'],
+        $accountId,
         $_REQUEST['happinessQuestion1'],
         $_REQUEST['happinessQuestion2'],
         $_REQUEST['happinessQuestion3'],
@@ -41,6 +41,7 @@ if(isset($_REQUEST['happinessQuestionnaireInput'])){
 
 <html>
   <h2>Profile</h2>
+  <p>This is your profile page. Please fill this out once in the beginning before going to the daily questionnaire. </p> 
     <form action='' method='post'>  
             Email:
             <input type='text' name='email' value= '<?php echo $user['email'] ?> '  /><br />
@@ -54,7 +55,7 @@ if(isset($_REQUEST['happinessQuestionnaireInput'])){
             Occupation:
             <input type='text' name='occupation' value= '<?php echo $user['occupation'] ?>'/><br />
 
-            Occupation Stress Level:
+            Overall occupation stress level:
                 <select name='stressLevel'>
                     <option value='low'>little to no stress</option>
                     <option value='medium'>some/moderate stress</option>
@@ -80,7 +81,7 @@ if(isset($_REQUEST['happinessQuestionnaireInput'])){
 
             <br/><br/>
             <a href='editProfilePage.php'>edit profile page</a>
-            <br/><br/>
+            <br/><br/><br />
            
             Go to the <a href='questionnaireForm.php'>daily questionnaire</a>
             
@@ -93,8 +94,7 @@ if(isset($_REQUEST['happinessQuestionnaireInput'])){
             <br />
          
         
-            Email:
-            <input type='text' name='email' value= '<?php echo $user['email'] ?> '  /><br />
+           
 
 
            <p>In general I consider myself  </p>
