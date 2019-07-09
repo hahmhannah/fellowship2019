@@ -16,7 +16,6 @@ if(isset($_REQUEST['NewQuestionnaireData'])){
        $_REQUEST['stress'], 
        $_REQUEST['breakfast'],
        $_REQUEST['lunch'],
-       $_REQUEST['dinner'], 
        $_REQUEST['exercise']
        
 
@@ -87,10 +86,7 @@ if(isset($_REQUEST['NewQuestionnaireData'])){
               <input type="radio" required name="lunch" value="yes" > yes
               <input type="radio"  name='lunch' value="no "> no<br>
                   
-              <br>
-              Did you eat dinner today?:
-              <input type="radio" required name="dinner" value="yes" > yes
-              <input type="radio" name='dinner' value="no"> no<br>
+             
 
               <br>
               How much exercise did you do today?<br>
