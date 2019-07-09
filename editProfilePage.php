@@ -11,7 +11,8 @@ if(isset($_REQUEST['newProfileEdit'])){
         $_REQUEST['occupation'],
         $_REQUEST['occupationStressLevel'],
         $_REQUEST['typeBeverage'],
-        $_REQUEST['beverageOther']
+        $_REQUEST['beverageOther'],
+        $_REQUEST['lifeEvent']
         );
     }
 
@@ -47,11 +48,15 @@ if(isset($_REQUEST['newProfileEdit'])){
                     <option value='other'>other</option>
                 </select><br /> 
             
-            If other, please specify below:
+            Please specify what kind of beverage (ie black coffee, cola, green tea, etc):
                 <input type='text' required  name='beverageOther' /><br />
 
+            Have you recently experienced or are currently experiencing a life altering event? (ie moving houses, switching jobs, etc )?<br />
+            <input type="radio" name="lifeEvent" value="yes" > yes<br>
+            <input type="radio" name='lifeEvent' value="no"> no<br>
 
                 <br/><br/>
+
             <a href='userLoggedInProfile.php'>go back to profile page</a>
 
             <br/><br/>

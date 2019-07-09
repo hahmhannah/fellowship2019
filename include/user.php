@@ -29,7 +29,7 @@ function attemptLogin($email, $password){
 
 
 
-function insertNewProfileEdit($email, $age, $gender, $occupation, $occupationStressLevel, $typeBeverage, $beverageOther){
+function insertNewProfileEdit($email, $age, $gender, $occupation, $occupationStressLevel, $typeBeverage, $beverageOther, $lifeEvent){
 dbQuery(
         '   
             UPDATE trackerSignUp
@@ -38,7 +38,8 @@ dbQuery(
             occupation = :occupation, 
             occupationStressLevel = :occupationStressLevel, 
             typeBeverage = :typeBeverage, 
-            beverageOther = :beverageOther
+            beverageOther = :beverageOther,
+            lifeEvent = :lifeEvent
             WHERE email = :email
         ',
         [   'age' => $age,
@@ -47,13 +48,47 @@ dbQuery(
             'occupationStressLevel' => $occupationStressLevel, 
             'typeBeverage' => $typeBeverage, 
             'beverageOther' => $beverageOther,
-            'email' => $email
+            'email' => $email,
+            'lifeEvent' => $lifeEvent
 
         ]
        
         );
 }
 
+function insertNewHappinessQuestionnaireInput($email, $happinessQuestion1, $happinessQuestion2, $happinessQuestion3, $happinessQuestion4){
+    dbQuery(
+        '   
+            UPDATE trackerSignUp
+            SET  
+            happinessQuestion1 = :happinessQuestion1, 
+            happinessQuestion2 = :happinessQuestion2, 
+            happinessQuestion3 = :happinessQuestion3,
+            happinessQuestion4 = :happinessQuestion4
+            WHERE email = :email
+        ',
+        [   'happinessQuestion1' => $happinessQuestion1,
+            'happinessQuestion2' => $happinessQuestion2, 
+            'happinessQuestion3' => $happinessQuestion3, 
+            'happinessQuestion4' => $happinessQuestion4,
+            'email' => $email
+        ]
+       
+        );
+}
+
+function getProfilePageInfo($email){
+    $profilePageInfo = dbQuery('
+    SELECT *
+    FROM trackerSignUp
+    WHERE accountId = :accountId AND email = :email', 
+    [
+        'accountId' => $accountId,
+        'email' => $email 
+        
+    ])->fetch();                             
+    return @$profilePageInfo; //this is an array
+    }
 
 
 /*

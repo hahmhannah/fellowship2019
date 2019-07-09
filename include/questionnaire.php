@@ -1,18 +1,30 @@
 <?php
-
-function insertnewQuestionnaireData($questionnaireId, $date, $time, $mood, $stress, $beverage, $breakfast, $lunch){
+/* 
+function insertNewQuestionnaireData($questionnaireId, $date, $time, $mood, $stress, $beverage, $breakfast, $lunch){
     dbQuery(
         '   
-            INSERT INTO questionnaire(questionnaireId, date, mood)
-            VALUES(:questionnaireId, :date,  :mood)
+            INSERT INTO questionnaire(questionnaireId)
+            VALUES(:questionnaireId)
         ',
         [
-            'questionnaireId' => $questionnaireId,
-            'date' =>  $date, 
+            'questionnaireId' => $questionnaireId
             
-            'mood'=> $mood, 
             
            // 'exercise' => $exercise
+        ]
+        );
+}  */
+
+
+function insertNewQuestionnaireData($accountId){
+    dbQuery(
+        '   
+            INSERT INTO questionnaire(accountId)
+            VALUES(:accountId)
+        ',
+        [
+            'accountId' => $accountId
+            
         ]
         );
 }
