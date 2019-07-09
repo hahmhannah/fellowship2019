@@ -52,8 +52,8 @@ if(isset($_REQUEST['newProfileEdit'])){
                 <input type='text' required  name='beverageOther' /><br />
 
             Have you recently experienced or are currently experiencing a life altering event? (ie moving houses, switching jobs, etc )?<br />
-            <input type="radio" name="lifeEvent" value="yes" > yes<br>
-            <input type="radio" name='lifeEvent' value="no"> no<br>
+            <input type="radio" required name="lifeEvent" value="yes" > yes<br>
+            <input type="radio" required name='lifeEvent' value="no"> no<br>
 
                 <br/><br/>
 
