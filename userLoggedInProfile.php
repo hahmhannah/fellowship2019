@@ -90,7 +90,7 @@ if(isset($_REQUEST['happinessQuestionnaireInput'])){
 
             <h2>Happiness Scale</h2>
             <p> 
-            Please fill out this questionnaire after filling out the last daily questionnaire. </p>
+            Please fill out this questionnaire between 12pm to 5pm. </p>
             <br />
          
         
