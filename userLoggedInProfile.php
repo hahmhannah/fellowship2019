@@ -41,7 +41,7 @@ if(isset($_REQUEST['happinessQuestionnaireInput'])){
 
 <html>
   <h2>Profile</h2>
-  <p>This is your profile page. Please fill this out once in the beginning before going to the daily questionnaire. </p> 
+  <p>This is your profile page. Please fill this out only once. The daily questionnaire is down below. </p> 
     <form action='' method='post'>  
             Email:
             <input type='text' name='email' value= '<?php echo $user['email'] ?> '  /><br />
