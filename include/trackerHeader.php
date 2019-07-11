@@ -3,7 +3,7 @@
         echo "
             <html>
                 <head>
-                    <link href='moodtracker.css' rel='stylesheet' type='text/css'>
+                    <link href='index.css' rel='stylesheet' type='text/css'>
                     <title> ".$title." </title>
                 </head>
                 

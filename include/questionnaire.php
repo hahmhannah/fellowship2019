@@ -15,17 +15,17 @@ function insertNewQuestionnaireData($questionnaireId, $date, $time, $mood, $stre
         );
 }  */  //NOW() is a function (not passed through)
 
-function insertNewQuestionnaireData($accountId, $questionnaireBeverage, $questionnaireBeverageOther, $beverageSpecific, $howMuchBeverage, $howMuchWater, 
-$sleep, $stress, $breakfast, $lunch, $exercise){
+function insertNewQuestionnaireData($accountId, $questionnaireBeverage, /*$questionnaireBeverageOther, */ $beverageSpecific, $howMuchBeverage, $howMuchWater, 
+$sleep, $stress, $breakfast, $lunch, $exercise, $questionnaireComments, $mood){
     dbQuery(
         '   
-            INSERT INTO questionnaire(accountId, questionnaireBeverage, questionnaireBeverageOther, beverageSpecific, howMuchBeverage, howMuchWater, sleep, stress, breakfast, lunch,  exercise, c_time)
-            VALUES(:accountId, :questionnaireBeverage, :questionnaireBeverageOther, :beverageSpecific, :howMuchBeverage, :howMuchWater, :sleep, :stress, :breakfast, :lunch, :exercise, NOW())
+            INSERT INTO questionnaire(accountId, questionnaireBeverage,  beverageSpecific, howMuchBeverage, howMuchWater, sleep, stress, breakfast, lunch, questionnaireComments, mood, exercise, c_time)
+            VALUES(:accountId, :questionnaireBeverage,  :beverageSpecific, :howMuchBeverage, :howMuchWater, :sleep, :stress, :breakfast, :lunch, :questionnaireComments, :mood, :exercise, NOW())
         ',
         [
            'accountId' => $accountId, 
            'questionnaireBeverage' => $questionnaireBeverage,
-           'questionnaireBeverageOther' => $questionnaireBeverageOther,
+          
            'beverageSpecific' => $beverageSpecific,
            'howMuchBeverage' => $howMuchBeverage,
            'howMuchWater' => $howMuchWater,
@@ -33,7 +33,9 @@ $sleep, $stress, $breakfast, $lunch, $exercise){
            'stress' => $stress,
            'breakfast' => $breakfast,
            'lunch' => $lunch,
-           'exercise' => $exercise
+           'exercise' => $exercise,
+           'questionnaireComments' => $questionnaireComments,
+           'mood' => $mood
            
         ]
 

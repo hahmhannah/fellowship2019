@@ -8,7 +8,7 @@ if(isset($_REQUEST['NewQuestionnaireData'])){
    insertNewQuestionnaireData(
        $accountId,
        $_REQUEST['questionnaireBeverage'],
-       $_REQUEST['questionnaireBeverageOther'], 
+     //  $_REQUEST['questionnaireBeverageOther'], 
        $_REQUEST['beverageSpecific'], 
        $_REQUEST['howMuchBeverage'], 
        $_REQUEST['howMuchWater'], 
@@ -16,7 +16,9 @@ if(isset($_REQUEST['NewQuestionnaireData'])){
        $_REQUEST['stress'], 
        $_REQUEST['breakfast'],
        $_REQUEST['lunch'],
-       $_REQUEST['exercise']
+       $_REQUEST['exercise'], 
+       $_REQUEST['questionnaireComments'], 
+       $_REQUEST['mood']
        
 
  
@@ -26,9 +28,12 @@ if(isset($_REQUEST['NewQuestionnaireData'])){
 
  <html>
     <h2>Questionnaire</h2>
+      <p>Please fill this out once a day between 12pm and 5pm. </p>
+      <br>
       <form action='' method='post'>  
+      
             
-            What type of beverage did you drink today?:
+            What type of beverage did you primarily drink today?:
                   <select required name='questionnaireBeverage'>
                       <option value='coffee'>coffee</option>
                       <option value='tea'>tea</option>
@@ -37,9 +42,9 @@ if(isset($_REQUEST['NewQuestionnaireData'])){
                       <option value='none'>none</option>
                   </select><br /> 
                   <br>
-             If more than 1, please list them:
+            <!--  If more than 1, please list them:
              <input type='text' required name='questionnaireBeverageOther' /><br />
-             <br>
+             <br>  -->
 
              Please specify what kind of the above beverage you drank today (ie black coffee, green tea):
              <input type='text' required name='beverageSpecific' /><br />
@@ -94,12 +99,21 @@ if(isset($_REQUEST['NewQuestionnaireData'])){
              <input type="radio" name="exercise" value="low intensity" >low intensity  (ie can speak comfortably)<br>
              <input type="radio" name='exercise' value="medium intensity"> medium intensity (ie light sweat, can talk but with some effort)<br>
              <input type="radio" name="exercise" value="high intensity" > high intensity (ie unable to say more than a few words)<br>
-                   
+             <br>  
 
-          
-            
-    
-  
+             What word best describes how you feel today?<br>
+             <input type="radio" required name="mood" value="happy" >happy<br>
+             <input type="radio" name="mood" value="sad" >sad<br>
+             <input type="radio" name='mood' value="tired"> tired<br>
+             <input type="radio" name="mood" value="angry" > angry<br>
+             <input type="radio" name="mood" value="neutral" > neutral <br>  
+             <input type="radio" name="mood" value="productive"> productive<br>
+             <br/><br/>
+
+             Comments for yourself:
+             <textarea name='questionnaireComments' rows='4' cols='30'></textarea><br />
+             
+             <br>
   
               <br/><br/>
               
