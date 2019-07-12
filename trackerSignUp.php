@@ -9,7 +9,7 @@ if(isset($_REQUEST['newAccount'])){
     );
 
 
-    header("Location: /userLoggedInProfile.php");
+    header("Location: /signUpConfirmation.php");
     
      
 }
