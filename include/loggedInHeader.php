@@ -18,8 +18,7 @@
                             </div> 
                             <div class='navBarChild2'>  
                                 <li class='navProfile'><a href='/userLoggedInProfile.php'>profile</a></li> 
-                                <li class='navLogin'><a href='/trackerLogin.php'>login</a></li>
-                                <li class='navSignUp'><a href='/trackerSignUp.php'>sign up</a></li>
+                                <li class='navLogout'><a href='/trackerLogout.php'>log out</a></li>
                             </div>
                         </ul>       
                     </div>

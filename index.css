@@ -34,7 +34,7 @@
     padding:12px;
 }
 
-.navProfile, .navLogin, .navSignUp{
+.navProfile, .navLogin, .navSignUp, .navLogout{
     padding-left:20px;
 }
 

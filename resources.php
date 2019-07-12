@@ -7,7 +7,7 @@
 <html>
 
 
-    <head><link href="moodtracker.css" rel="stylesheet" type="text/css"></head>
+    <head><link href="index.css" rel="stylesheet" type="text/css"></head>
 
     <body class='resourcesBody'>
         <p> coming soon </p>

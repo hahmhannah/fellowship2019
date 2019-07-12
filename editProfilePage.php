@@ -2,9 +2,11 @@
     include('config/init.php');
     echologgedInHeader("edit profile");
     $user = getUser($_SESSION['accountId']); 
+    $accountId = $user['accountId'];
   //because defined here, don't have to use request
 if(isset($_REQUEST['newProfileEdit'])){
     insertNewProfileEdit(
+        $accountId,
         $_REQUEST['email'],
         $_REQUEST['age'],
         $_REQUEST['gender'],
@@ -13,6 +15,7 @@ if(isset($_REQUEST['newProfileEdit'])){
         $_REQUEST['typeBeverage'],
         $_REQUEST['beverageOther'],
         $_REQUEST['lifeEvent']
+
         );
     }
 

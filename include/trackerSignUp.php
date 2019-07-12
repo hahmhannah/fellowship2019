@@ -11,6 +11,8 @@ function insertNewAccount($email, $password){
             'password' => $password
         ]
         );
+
+        
 }
 
 ?>
