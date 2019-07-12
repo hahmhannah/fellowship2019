@@ -108,6 +108,8 @@ if(isset($_REQUEST['NewQuestionnaireData'])){
              <input type="radio" name="mood" value="angry" > angry<br>
              <input type="radio" name="mood" value="neutral" > neutral <br>  
              <input type="radio" name="mood" value="productive"> productive<br>
+             <input type="radio" name="mood" value="sick"> sick<br>
+
              <br/><br/>
 
              Comments for yourself:
