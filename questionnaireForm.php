@@ -1,6 +1,6 @@
-<?php
+<?php 
 include('config/init.php');
-echologgedInHeader("questionnaire");
+echologgedInHeader("questionnaire"); /*
 $user = getUser($_SESSION['accountId']); 
 $accountId = $user['accountId'];
 
@@ -106,4 +106,5 @@ if(isset($_REQUEST['NewQuestionnaireData'])){
               <br/><br/>
               <input type='submit' name='NewQuestionnaireData' value='submit' />
   
-              <br /><br />
+              <br /><br /> */
+              
