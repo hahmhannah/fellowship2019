@@ -1,0 +1,45 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+.mainPagePictureDiv{
+    height:700px;
+    background-color:lightgrey;
+    background-image:url("mainPictureDiv.jpg");
+    background-repeat: no-repeat;
+
+}
+
+.mainNavBarDiv{
+    height:75px;
+}
+
+
+.getToKnowMeDiv{
+    height:500px;
+    text-align:center;
+    padding-top:50px;
+    font-size:40px;
+
+}
+
+.educationDiv{
+    height:500px;
+    background-color:lightgrey;
+}
+
+.thingsIveDoneDiv{
+    height:500px;
+    background-color:white;
+}
+
+.myThoughtsDiv{
+    height:500px;
+    background-color:lightgrey;
+}
+
+.footerContactDiv{
+    height:300px;
+    background-color:lightblue;
+}
