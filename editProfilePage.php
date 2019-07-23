@@ -1,4 +1,4 @@
-<?php  
+<?php  /*
     include('config/init.php');
     echologgedInHeader("edit profile");
     $user = getUser($_SESSION['accountId']); 

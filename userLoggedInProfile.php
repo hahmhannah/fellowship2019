@@ -71,16 +71,16 @@ if(isset($_REQUEST['happinessQuestionnaireInput'])){
             <input type='text' name='occupation' value= '<?php echo $user['occupation'] ?>'/><br />
 
             How stressful would you rate your occupation? (1=not stressed at all, 10=extremely stressed)
-            <input type="radio" name="occupationStressLevel" value='<?php echo $user['occupationStressLevel'] ?>' > 1
-            <input type="radio" name='occupationStressLevel' value='<?php echo $user['occupationStressLevel'] ?>'> 2
-            <input type="radio" name="occupationStressLevel" value='<?php echo $user['occupationStressLevel'] ?>' > 3
-            <input type="radio" name='occupationStressLevel' value='<?php echo $user['occupationStressLevel'] ?>'> 4
-            <input type="radio" name="occupationStressLevel" value='<?php echo $user['occupationStressLevel'] ?>' > 5
-            <input type="radio" name='occupationStressLevel' value='<?php echo $user['occupationStressLevel'] ?>'> 6
-            <input type="radio" name="occupationStressLevel" value='<?php echo $user['occupationStressLevel'] ?>' > 7
-            <input type="radio" name='occupationStressLevel' value='<?php echo $user['occupationStressLevel'] ?>'> 8
-            <input type="radio" name="occupationStressLevel" value='<?php echo $user['occupationStressLevel'] ?>' > 9
-            <input type="radio" name='occupationStressLevel' value='<?php echo $user['occupationStressLevel'] ?>'> 10
+            <input type="radio" name="occupationStressLevel" value='1' > 1
+            <input type="radio" name='occupationStressLevel' value='2'> 2
+            <input type="radio" name="occupationStressLevel" value='3' > 3
+            <input type="radio" name='occupationStressLevel' value='4'> 4
+            <input type="radio" name="occupationStressLevel" value='5' > 5
+            <input type="radio" name='occupationStressLevel' value='6'> 6
+            <input type="radio" name="occupationStressLevel" value='7' > 7
+            <input type="radio" name='occupationStressLevel' value='8'> 8
+            <input type="radio" name="occupationStressLevel" value='9' > 9
+            <input type="radio" name='occupationStressLevel' value='10'> 10
             <br /> 
 
 
@@ -114,8 +114,8 @@ if(isset($_REQUEST['happinessQuestionnaireInput'])){
 
 
             Have you recently experienced or are currently experiencing a life altering event? (ie moving houses, switching jobs, etc )?<br />
-            <input type="radio" name="lifeEvent" value='<?php echo $user['lifeEvent'] ?>' > yes
-            <input type="radio" name='lifeEvent' value='<?php echo $user['lifeEvent'] ?>'> no<br>
+            <input type="radio" name="lifeEvent" value='yes' > yes
+            <input type="radio" name='lifeEvent' value='no'> no<br>
 
 
             <br/><br/>
