@@ -48,6 +48,19 @@ if(isset($_REQUEST['newProfileEdit'])){
                     <option value='other'>other</option>
                 </select><br /> 
             
+            How stressful would you rate your occupation? (1=not stressed at all, 10=extremely stressed)
+            <input type="radio" name="occupationStressLevel" value='<?php echo $user['occupationStressLevel'] ?>' > 1
+            <input type="radio" name='occupationStressLevel' value='<?php echo $user['occupationStressLevel'] ?>'> 2
+            <input type="radio" name="occupationStressLevel" value='<?php echo $user['occupationStressLevel'] ?>' > 3
+            <input type="radio" name='occupationStressLevel' value='<?php echo $user['occupationStressLevel'] ?>'> 4
+            <input type="radio" name="occupationStressLevel" value='<?php echo $user['occupationStressLevel'] ?>5' > 5
+            <input type="radio" name='occupationStressLevel' value='<?php echo $user['occupationStressLevel'] ?>'> 6
+            <input type="radio" name="occupationStressLevel" value='<?php echo $user['occupationStressLevel'] ?>' > 7
+            <input type="radio" name='occupationStressLevel' value='<?php echo $user['occupationStressLevel'] ?>'> 8
+            <input type="radio" name="occupationStressLevel" value='<?php echo $user['occupationStressLevel'] ?>' > 9
+            <input type="radio" name='occupationStressLevel' value='<?php echo $user['occupationStressLevel'] ?>'> 10
+            <br />
+            
             Please specify what kind of beverage (ie black coffee, cola, green tea, etc):
                 <input type='text' required  name='beverageOther' /><br />
 

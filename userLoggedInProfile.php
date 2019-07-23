@@ -69,13 +69,26 @@ if(isset($_REQUEST['happinessQuestionnaireInput'])){
                     <option value='<?php echo $user['typeBeverage'] ?>'>soda</option>
                     <option value='<?php echo $user['typeBeverage'] ?>'>other</option>
                 </select><br /> 
+
+                How stressful would you rate your occupation? (1=not stressed at all, 10=extremely stressed)
+            <input type="radio" name="occupationStressLevel" value='<?php echo $user['occupationStressLevel'] ?>' > 1
+            <input type="radio" name='occupationStressLevel' value='<?php echo $user['occupationStressLevel'] ?>'> 2
+            <input type="radio" name="occupationStressLevel" value='<?php echo $user['occupationStressLevel'] ?>' > 3
+            <input type="radio" name='occupationStressLevel' value='<?php echo $user['occupationStressLevel'] ?>'> 4
+            <input type="radio" name="occupationStressLevel" value='<?php echo $user['occupationStressLevel'] ?>5' > 5
+            <input type="radio" name='occupationStressLevel' value='<?php echo $user['occupationStressLevel'] ?>'> 6
+            <input type="radio" name="occupationStressLevel" value='<?php echo $user['occupationStressLevel'] ?>' > 7
+            <input type="radio" name='occupationStressLevel' value='<?php echo $user['occupationStressLevel'] ?>'> 8
+            <input type="radio" name="occupationStressLevel" value='<?php echo $user['occupationStressLevel'] ?>' > 9
+            <input type="radio" name='occupationStressLevel' value='<?php echo $user['occupationStressLevel'] ?>'> 10
+            <br /> 
             
             Please specify what kind of beverage (ie black coffee, cola, green tea, etc):
                 <input type='text' name='beverageOther' value= '<?php echo $user['beverageOther'] ?>'/> <br />
 
 
             Have you recently experienced or are currently experiencing a life altering event? (ie moving houses, switching jobs, etc )?<br />
-            <input type="radio" name="lifeEvent" value='<?php echo $user['lifeEvent'] ?>' > yes
+            <input type="radio" name='lifeEvent' value='<?php echo $user['lifeEvent'] ?>' > yes
             <input type="radio" name='lifeEvent' value='<?php echo $user['lifeEvent'] ?>'> no<br>
 
 
