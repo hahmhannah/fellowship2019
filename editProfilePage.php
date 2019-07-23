@@ -3,7 +3,7 @@
     echologgedInHeader("edit profile");
     $user = getUser($_SESSION['accountId']); 
   //because defined here, don't have to use request
-if(isset($_REQUEST['newProfileEdit'])){
+/*if(isset($_REQUEST['newProfileEdit'])){
     insertNewProfileEdit(
         $_REQUEST['email'],
         $_REQUEST['age'],
@@ -15,9 +15,9 @@ if(isset($_REQUEST['newProfileEdit'])){
         $_REQUEST['lifeEvent']
         );
     }
-
+ */
 ?>
-
+<!--
 <html>
   <h2>profile edit</h2>
     <form action='' method='post'>  
@@ -62,4 +62,4 @@ if(isset($_REQUEST['newProfileEdit'])){
             <br/><br/>
             <input type='submit' name='newProfileEdit' value='edit profile' />
 
- </form>
+ </form> -->
