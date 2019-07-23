@@ -63,6 +63,6 @@
             <a href='userLoggedInProfile.php'>go back to profile page</a>
 
             <br/><br/>
-            <input type='submit' name='newProfileEdit' value='edit profile' />
+          
 
  </form>
