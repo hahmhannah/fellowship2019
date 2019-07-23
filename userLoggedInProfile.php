@@ -75,7 +75,7 @@ if(isset($_REQUEST['happinessQuestionnaireInput'])){
 
 
             Have you recently experienced or are currently experiencing a life altering event? (ie moving houses, switching jobs, etc )?<br />
-            <input type="radio" name="<?php echo $user['lifeEvent'] ?>" value='yes' > yes
+            <input type="radio" name="lifeEvent" value='<?php echo $user['lifeEvent'] ?>' > yes
             <input type="radio" name='lifeEvent' value='<?php echo $user['lifeEvent'] ?>'> no<br>
 
 
