@@ -75,7 +75,7 @@ if(isset($_REQUEST['happinessQuestionnaireInput'])){
             <input type="radio" name='occupationStressLevel' value='<?php echo $user['occupationStressLevel'] ?>'> 2
             <input type="radio" name="occupationStressLevel" value='<?php echo $user['occupationStressLevel'] ?>' > 3
             <input type="radio" name='occupationStressLevel' value='<?php echo $user['occupationStressLevel'] ?>'> 4
-            <input type="radio" name="occupationStressLevel" value='<?php echo $user['occupationStressLevel'] ?>5' > 5
+            <input type="radio" name="occupationStressLevel" value='<?php echo $user['occupationStressLevel'] ?>' > 5
             <input type="radio" name='occupationStressLevel' value='<?php echo $user['occupationStressLevel'] ?>'> 6
             <input type="radio" name="occupationStressLevel" value='<?php echo $user['occupationStressLevel'] ?>' > 7
             <input type="radio" name='occupationStressLevel' value='<?php echo $user['occupationStressLevel'] ?>'> 8
