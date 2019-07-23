@@ -85,16 +85,16 @@ if(isset($_REQUEST['happinessQuestionnaireInput'])){
 
 
             On average, how stressed do you feel in a day? (1=not stressed at all, 10=extremely stressed)
-            <input type="radio" name="stressLevel" value='<?php echo $user['stressLevel'] ?>' > 1
-            <input type="radio" name='stressLevel' value='<?php echo $user['stressLevel'] ?>'> 2
-            <input type="radio" name="stressLevel" value='<?php echo $user['stressLevel'] ?>' > 3
-            <input type="radio" name='stressLevel' value='<?php echo $user['stressLevel'] ?>'> 4
-            <input type="radio" name="stressLevel" value='<?php echo $user['stressLevel'] ?>' > 5
-            <input type="radio" name='stressLevel' value='<?php echo $user['stressLevel'] ?>'> 6
-            <input type="radio" name="stressLevel" value='<?php echo $user['stressLevel'] ?>' > 7
-            <input type="radio" name='stressLevel' value='<?php echo $user['stressLevel'] ?>'> 8
-            <input type="radio" name="stressLevel" value='<?php echo $user['stressLevel'] ?>' > 9
-            <input type="radio" name='stressLevel' value='<?php echo $user['stressLevel'] ?>'> 10
+            <input type="radio" name="stressLevel" value='1' > 1
+            <input type="radio" name='stressLevel' value='2 '> 2
+            <input type="radio" name="stressLevel" value='3' > 3
+            <input type="radio" name='stressLevel' value='4'> 4
+            <input type="radio" name="stressLevel" value='5' > 5
+            <input type="radio" name='stressLevel' value='6'> 6
+            <input type="radio" name="stressLevel" value='7' > 7
+            <input type="radio" name='stressLevel' value='8'> 8
+            <input type="radio" name="stressLevel" value='9' > 9
+            <input type="radio" name='stressLevel' value='10'> 10
             <br /> 
 
             What kind of caffeinated beverage do you typically drink:
