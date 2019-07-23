@@ -19,7 +19,20 @@ $accountId = $_SESSION['accountId'];
 $profileEdit = getProfileEdit($accountId); //returns whole line from database
 echo $profileEdit;  */
 
+if(isset($_REQUEST['newProfileEdit'])){
+    insertNewProfileEdit(
+        $accountId,
+        $_REQUEST['email'],
+        $_REQUEST['age'],
+        $_REQUEST['gender'],
+        $_REQUEST['occupation'],
+        $_REQUEST['occupationStressLevel'],
+        $_REQUEST['typeBeverage'],
+        $_REQUEST['beverageOther'],
+        $_REQUEST['lifeEvent']
 
+        );
+    }
 
 
 if(isset($_REQUEST['happinessQuestionnaireInput'])){
@@ -80,13 +93,18 @@ if(isset($_REQUEST['happinessQuestionnaireInput'])){
 
 
             <br/><br/>
-            <a href='editProfilePage.php'>edit profile page</a>
+           
+           
+            <input type='submit' name='newProfileEdit' value='edit profile' />
             <br/><br/><br />
            
             Go to the <a href='questionnaireForm.php'>daily questionnaire</a>
             
             <br /><br />
+
+            
             <br />
+
 
             <h2>Happiness Scale</h2>
             <p> 

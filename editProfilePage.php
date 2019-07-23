@@ -4,7 +4,7 @@
     $user = getUser($_SESSION['accountId']); 
     $accountId = $user['accountId'];
   //because defined here, don't have to use request
-if(isset($_REQUEST['newProfileEdit'])){
+/* if(isset($_REQUEST['newProfileEdit'])){
     insertNewProfileEdit(
         $accountId,
         $_REQUEST['email'],
@@ -18,7 +18,7 @@ if(isset($_REQUEST['newProfileEdit'])){
 
         );
     }
-
+*/
 ?>
 
 <html>
