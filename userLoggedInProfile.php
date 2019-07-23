@@ -64,10 +64,10 @@ if(isset($_REQUEST['happinessQuestionnaireInput'])){
 
             What kind of caffeinated beverage do you typically drink:
                 <select name='typeBeverage'>
-                    <option value='coffee'>coffee</option>
-                    <option value='tea'>tea</option>
-                    <option value='soda'>soda</option>
-                    <option value='other'>other</option>
+                    <option value='<?php echo $user['typeBeverage'] ?>'>coffee</option>
+                    <option value='<?php echo $user['typeBeverage'] ?>'>tea</option>
+                    <option value='<?php echo $user['typeBeverage'] ?>'>soda</option>
+                    <option value='<?php echo $user['typeBeverage'] ?>'>other</option>
                 </select><br /> 
             
             Please specify what kind of beverage (ie black coffee, cola, green tea, etc):
@@ -75,8 +75,8 @@ if(isset($_REQUEST['happinessQuestionnaireInput'])){
 
 
             Have you recently experienced or are currently experiencing a life altering event? (ie moving houses, switching jobs, etc )?<br />
-            <input type="radio" name="lifeEvent" value='yes' > yes
-            <input type="radio" name='lifeEvent' value='no'> no<br>
+            <input type="radio" name="<?php echo $user['lifeEvent'] ?>" value='yes' > yes
+            <input type="radio" name='lifeEvent' value='<?php echo $user['lifeEvent'] ?>'> no<br>
 
 
             <br/><br/>
