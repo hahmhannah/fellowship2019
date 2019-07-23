@@ -29,33 +29,37 @@ function attemptLogin($email, $password){
 
 
 
-function insertNewProfileEdit($email, $age, $gender, $occupation, $occupationStressLevel, $typeBeverage, $beverageOther, $lifeEvent){
-dbQuery(
-        '   
-            UPDATE trackerSignUp
-            SET  age = :age,
-            gender = :gender, 
-            occupation = :occupation, 
-            occupationStressLevel = :occupationStressLevel, 
-            typeBeverage = :typeBeverage, 
-            beverageOther = :beverageOther,
-            lifeEvent = :lifeEvent
-            WHERE email = :email
-        ',
-        [   'age' => $age,
-            'gender' => $gender, 
-            'occupation' => $occupation, 
-            'occupationStressLevel' => $occupationStressLevel, 
-            'typeBeverage' => $typeBeverage, 
-            'beverageOther' => $beverageOther,
-            'email' => $email,
-            'lifeEvent' => $lifeEvent
-
-        ]
-       
-        );
-}
-
+function insertNewProfileEdit($accountId, $email, $age, $gender, $occupation, $occupationStressLevel, $typeBeverage, $beverageOther, $lifeEvent, $numberBeverage, $stressLevel){
+    dbQuery(
+            '   
+                UPDATE trackerSignUp
+                SET  age = :age,
+                email = :email,
+                gender = :gender, 
+                occupation = :occupation, 
+                occupationStressLevel = :occupationStressLevel, 
+                typeBeverage = :typeBeverage, 
+                beverageOther = :beverageOther,
+                lifeEvent = :lifeEvent, 
+                numberBeverage = :numberBeverage, 
+                stressLevel = :stressLevel
+                WHERE accountId = :accountId
+            ',
+            [   'accountId' => $accountId,
+                'age' => $age,
+                'gender' => $gender, 
+                'occupation' => $occupation, 
+                'occupationStressLevel' => $occupationStressLevel, 
+                'typeBeverage' => $typeBeverage, 
+                'beverageOther' => $beverageOther,
+                'email' => $email,
+                'lifeEvent' => $lifeEvent, 
+                'numberBeverage' => $numberBeverage, 
+                'stressLevel' => $stressLevel
+            ]
+           
+            );
+    }
 function insertNewHappinessQuestionnaireInput($accountId, $happinessQuestion1, $happinessQuestion2, $happinessQuestion3, $happinessQuestion4){
     dbQuery(
         '   

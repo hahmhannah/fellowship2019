@@ -20,6 +20,22 @@ $profileEdit = getProfileEdit($accountId); //returns whole line from database
 echo $profileEdit;  */
 
 
+if(isset($_REQUEST['newProfileEdit'])){
+    insertNewProfileEdit(
+        $accountId,
+        $_REQUEST['email'],
+        $_REQUEST['age'],
+        $_REQUEST['gender'],
+        $_REQUEST['occupation'],
+        $_REQUEST['occupationStressLevel'],
+        $_REQUEST['typeBeverage'],
+        $_REQUEST['beverageOther'],
+        $_REQUEST['lifeEvent'], 
+        $_REQUEST['numberBeverage'],
+        $_REQUEST['stressLevel']
+
+        );
+    }
 
 
 if(isset($_REQUEST['happinessQuestionnaireInput'])){
@@ -41,7 +57,7 @@ if(isset($_REQUEST['happinessQuestionnaireInput'])){
 
 <html>
   <h2>Profile</h2>
-  <p>This is your profile page. Please fill this out once in the beginning before going to the daily questionnaire. </p> 
+  <p>This is your profile page. Please fill this out only once. The daily questionnaire is down below. </p> 
     <form action='' method='post'>  
             Email:
             <input type='text' name='email' value= '<?php echo $user['email'] ?> '  /><br />
@@ -55,55 +71,71 @@ if(isset($_REQUEST['happinessQuestionnaireInput'])){
             Occupation:
             <input type='text' name='occupation' value= '<?php echo $user['occupation'] ?>'/><br />
 
-            Overall occupation stress level:
-                <select name='stressLevel'>
-                    <option value='low'>little to no stress</option>
-                    <option value='medium'>some/moderate stress</option>
-                    <option value='high'>High stress</option>
-                </select> <br /> 
+            How stressful would you rate your occupation? (1=not stressed at all, 10=extremely stressed)
+            <input type="radio" name="occupationStressLevel" value='1 ' > 1
+            <input type="radio" name='occupationStressLevel' value='2'> 2
+            <input type="radio" name="occupationStressLevel" value='3' > 3
+            <input type="radio" name='occupationStressLevel' value='4'> 4
+            <input type="radio" name="occupationStressLevel" value='5' > 5
+            <input type="radio" name='occupationStressLevel' value='6'> 6
+            <input type="radio" name="occupationStressLevel" value='7' > 7
+            <input type="radio" name='occupationStressLevel' value='8'> 8
+            <input type="radio" name="occupationStressLevel" value='9' > 9
+            <input type="radio" name='occupationStressLevel' value='10'> 10
+            <br /> 
+
+
+            On average, how stressed do you feel in a day? (1=not stressed at all, 10=extremely stressed)
+            <input type="radio" name="stressLevel" value='1' > 1
+            <input type="radio" name='stressLevel' value='2 '> 2
+            <input type="radio" name="stressLevel" value='3' > 3
+            <input type="radio" name='stressLevel' value='4'> 4
+            <input type="radio" name="stressLevel" value='5' > 5
+            <input type="radio" name='stressLevel' value='6'> 6
+            <input type="radio" name="stressLevel" value='7' > 7
+            <input type="radio" name='stressLevel' value='8'> 8
+            <input type="radio" name="stressLevel" value='9' > 9
+            <input type="radio" name='stressLevel' value='10'> 10
+            <br /> 
 
             What kind of caffeinated beverage do you typically drink:
-                <select name='typeBeverage'>
+                <select name='typeBeverage' >
                     <option value='<?php echo $user['typeBeverage'] ?>'>coffee</option>
                     <option value='<?php echo $user['typeBeverage'] ?>'>tea</option>
                     <option value='<?php echo $user['typeBeverage'] ?>'>soda</option>
                     <option value='<?php echo $user['typeBeverage'] ?>'>other</option>
                 </select><br /> 
-
-                How stressful would you rate your occupation? (1=not stressed at all, 10=extremely stressed)
-            <input type="radio" name="occupationStressLevel" value='<?php echo $user['occupationStressLevel'] ?>' > 1
-            <input type="radio" name='occupationStressLevel' value='<?php echo $user['occupationStressLevel'] ?>'> 2
-            <input type="radio" name="occupationStressLevel" value='<?php echo $user['occupationStressLevel'] ?>' > 3
-            <input type="radio" name='occupationStressLevel' value='<?php echo $user['occupationStressLevel'] ?>'> 4
-            <input type="radio" name="occupationStressLevel" value='<?php echo $user['occupationStressLevel'] ?>5' > 5
-            <input type="radio" name='occupationStressLevel' value='<?php echo $user['occupationStressLevel'] ?>'> 6
-            <input type="radio" name="occupationStressLevel" value='<?php echo $user['occupationStressLevel'] ?>' > 7
-            <input type="radio" name='occupationStressLevel' value='<?php echo $user['occupationStressLevel'] ?>'> 8
-            <input type="radio" name="occupationStressLevel" value='<?php echo $user['occupationStressLevel'] ?>' > 9
-            <input type="radio" name='occupationStressLevel' value='<?php echo $user['occupationStressLevel'] ?>'> 10
-            <br /> 
             
             Please specify what kind of beverage (ie black coffee, cola, green tea, etc):
                 <input type='text' name='beverageOther' value= '<?php echo $user['beverageOther'] ?>'/> <br />
 
 
+            How many cups of the specified beverage do you drink a day?
+            <input type='text' name='numberBeverage' value= '<?php echo $user['numberBeverage'] ?>'/> <br />
+
+
             Have you recently experienced or are currently experiencing a life altering event? (ie moving houses, switching jobs, etc )?<br />
-            <input type="radio" name='lifeEvent' value='<?php echo $user['lifeEvent'] ?>' > yes
-            <input type="radio" name='lifeEvent' value='<?php echo $user['lifeEvent'] ?>'> no<br>
+            <input type="radio" name="lifeEvent" value='yes ' > yes
+            <input type="radio" name='lifeEvent' value='no'> no<br>
 
 
             <br/><br/>
-            <a href='editProfilePage.php'>edit profile page</a>
+           
+           
+            <input type='submit' name='newProfileEdit' value='edit profile' />
             <br/><br/><br />
            
             Go to the <a href='questionnaireForm.php'>daily questionnaire</a>
             
             <br /><br />
+
+            
             <br />
+
 
             <h2>Happiness Scale</h2>
             <p> 
-            Please fill out this questionnaire between 12pm to 5pm. </p>
+            Please fill out this questionnaire after filling out the last daily questionnaire. </p>
             <br />
          
         
