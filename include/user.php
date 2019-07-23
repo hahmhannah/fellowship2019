@@ -29,7 +29,7 @@ function attemptLogin($email, $password){
 
 
 
-function insertNewProfileEdit($accountId, $email, $age, $gender, $occupation, $occupationStressLevel, $typeBeverage, $beverageOther, $lifeEvent){
+function insertNewProfileEdit($accountId, $email, $age, $stressLevel, $gender, $occupation, $occupationStressLevel, $typeBeverage, $beverageOther, $lifeEvent, $numberBeverage){
 dbQuery(
         '   
             UPDATE trackerSignUp
@@ -40,7 +40,9 @@ dbQuery(
             occupationStressLevel = :occupationStressLevel, 
             typeBeverage = :typeBeverage, 
             beverageOther = :beverageOther,
-            lifeEvent = :lifeEvent
+            lifeEvent = :lifeEvent, 
+            numberBeverage = :numberBeverage, 
+            stressLevel = :stressLevel
             WHERE accountId = :accountId
         ',
         [   'age' => $age,
@@ -51,7 +53,9 @@ dbQuery(
             'beverageOther' => $beverageOther,
             'email' => $email,
             'lifeEvent' => $lifeEvent,
-            'accountId' => $accountId
+            'accountId' => $accountId, 
+            'numberBeverage' => $numberBeverage, 
+            'stressLevel' => $stressLevel
 
         ]
        

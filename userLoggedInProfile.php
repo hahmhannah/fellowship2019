@@ -29,7 +29,9 @@ if(isset($_REQUEST['newProfileEdit'])){
         $_REQUEST['occupationStressLevel'],
         $_REQUEST['typeBeverage'],
         $_REQUEST['beverageOther'],
-        $_REQUEST['lifeEvent']
+        $_REQUEST['lifeEvent'], 
+        $_REQUEST['numberBeverage'],
+        $_REQUEST['stressLevel']
 
         );
     }
@@ -68,15 +70,35 @@ if(isset($_REQUEST['happinessQuestionnaireInput'])){
             Occupation:
             <input type='text' name='occupation' value= '<?php echo $user['occupation'] ?>'/><br />
 
-            Overall occupation stress level:
-                <select name='stressLevel'>
-                    <option value='low'>little to no stress</option>
-                    <option value='medium'>some/moderate stress</option>
-                    <option value='high'>High stress</option>
-                </select> <br /> 
+            How stressful would you rate your occupation? (1=not stressed at all, 10=extremely stressed)
+            <input type="radio" name="occupationStressLevel" value='1' > 1
+            <input type="radio" name='occupationStressLevel' value='2'> 2
+            <input type="radio" name="occupationStressLevel" value='3' > 3
+            <input type="radio" name='occupationStressLevel' value='4'> 4
+            <input type="radio" name="occupationStressLevel" value='5' > 5
+            <input type="radio" name='occupationStressLevel' value='6'> 6
+            <input type="radio" name="occupationStressLevel" value='7' > 7
+            <input type="radio" name='occupationStressLevel' value='8'> 8
+            <input type="radio" name="occupationStressLevel" value='9' > 9
+            <input type="radio" name='occupationStressLevel' value='10'> 10
+            <br /> 
+
+
+            On average, how stressed do you feel in a day? (1=not stressed at all, 10=extremely stressed)
+            <input type="radio" name="stressLevel" value='1' > 1
+            <input type="radio" name='stressLevel' value='2'> 2
+            <input type="radio" name="stressLevel" value='3' > 3
+            <input type="radio" name='stressLevel' value='4'> 4
+            <input type="radio" name="stressLevel" value='5' > 5
+            <input type="radio" name='stressLevel' value='6'> 6
+            <input type="radio" name="stressLevel" value='7' > 7
+            <input type="radio" name='stressLevel' value='8'> 8
+            <input type="radio" name="stressLevel" value='9' > 9
+            <input type="radio" name='stressLevel' value='10'> 10
+            <br /> 
 
             What kind of caffeinated beverage do you typically drink:
-                <select name='typeBeverage'>
+                <select name='typeBeverage' >
                     <option value='coffee'>coffee</option>
                     <option value='tea'>tea</option>
                     <option value='soda'>soda</option>
@@ -85,6 +107,10 @@ if(isset($_REQUEST['happinessQuestionnaireInput'])){
             
             Please specify what kind of beverage (ie black coffee, cola, green tea, etc):
                 <input type='text' name='beverageOther' value= '<?php echo $user['beverageOther'] ?>'/> <br />
+
+
+            How many cups of the specified beverage do you drink a day?
+            <input type='text' name='numberBeverage' value= '<?php echo $user['numberBeverage'] ?>'/> <br />
 
 
             Have you recently experienced or are currently experiencing a life altering event? (ie moving houses, switching jobs, etc )?<br />
