@@ -97,12 +97,14 @@ if(isset($_REQUEST['happinessQuestionnaireInput'])){
             <input type="radio" name='stressLevel' value='10'> 10
             <br /> 
 
+     
+
             What kind of caffeinated beverage do you typically drink:
                 <select name='typeBeverage' >
-                    <option value='<?php echo $user['typeBeverage'] ?>'>coffee</option>
-                    <option value='<?php echo $user['typeBeverage'] ?>'>tea</option>
-                    <option value='<?php echo $user['typeBeverage'] ?>'>soda</option>
-                    <option value='<?php echo $user['typeBeverage'] ?>'>other</option>
+                    <option value='coffee'>coffee</option>
+                    <option value='tea'>tea</option>
+                    <option value='soda'>soda</option>
+                    <option value='other'>other</option>
                 </select><br /> 
             
             Please specify what kind of beverage (ie black coffee, cola, green tea, etc):
