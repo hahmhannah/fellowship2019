@@ -10,10 +10,24 @@ include('config/init.php');
 
 
     <body>
+
+        <div class='navBarDiv'>
+            <ul class='navBarParent'>
+                 <div class='navBarChild1'>
+                    <li class='navName'><a href='#'>Hannah Hahm</a></li>
+                </div> 
+                <div class='navBarChild2'>   
+                    <li class='navAbout'><a href='#'>About</a></li>
+                    <li class='navExperiences'><a href='#'>Experiences</a></li>
+                    <li class='navThoughts'><a href='#'>Thoughts</a></li>
+                    <li class='navContact'><a href='#'>Contact</a></li>
+                </div>
+            </ul>  
+        </div>
         
     
         <div class='mainPagePictureDiv'>
-            <div class='mainNavBarDiv'>nav bar</div>
+            
             <div class='mainPageIntroduction'>Hi, I'm Hannah Hahm </div>
             <div class='mainPageIntroductionSmallText'>student and aspiring researcher </div>
         </div>
@@ -35,7 +49,7 @@ include('config/init.php');
                     <div class='educationRowWords'>
                         <ul>
                             <li>I'm a rising sophomore at Washington University in St. Louis pursuing a degree in Neuroscience </li> <br>
-                            <li>Some classes I've taken that I liked: Psych 3195 Abnormal Child Psychology, BIOL 2960 Principles of Biology I, Chem 111 General Chemistry I, Chem 112 General Chemistry II, Chem 152 General Chemistry Lab I </li><br>
+                            <li>Some classes I've taken that I liked: Psych 3195 Abnormal Child Psychology, BIOL 2960 Principles of Biology I, Chem 111 General Chemistry I, Chem 112 General Chemistry II, Chem 151 General Chemistry Lab I </li><br>
                             <li>Hobbies: running, coding, watching Marvel movies, trying to bake </li><br>
                             <li>I'm interested in medicine and research and hope to become a doctor someday</li>
                     </div>
