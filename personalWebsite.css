@@ -31,7 +31,7 @@
 }
 
 .getToKnowMeDiv{
-    height:500px;
+    height:550px;
     
 
 }
@@ -43,6 +43,19 @@
 
 .educationRowWashu{
     display:flex;
+}
+
+.educationRowPictureWashu{
+    margin-left:150px;
+    margin-top:50px;
+}
+
+.educationRowWords{
+    width:700px;
+    margin-left:150px;
+    margin-top:75px;
+    font-size:16px;
+    font-family:arial;
 }
 
 .educationRowBradshaw{
@@ -81,7 +94,7 @@
 
 .divTitles{
     text-align:center;
-    padding-top:50px;
+    padding-top:85px;
     font-size:40px;
     font-family:'arial';
     
@@ -91,8 +104,8 @@
 
 
 .thingsIveDoneDiv{
-    height:500px;
-    background-color:white;
+    height:400px;
+    background-color:lightcyan;
   
 }
 

@@ -20,9 +20,29 @@ include('config/init.php');
 
         <div class='getToKnowMeDiv'>
             <h2 class='divTitles'>Get To Know Me</h2>
+            <hr class='lineUnderneathDivTitles'>
+<!--
+            <div class='educationRowBradshaw'>
+                    <div class='educationRowPictureBradshaw'>
+                        <img src='bcsLogo.png' class='bcsLogo'>
+                    </div>
+            </div>          --> 
+            
+            <div class='educationRowWashu'>
+                    <div class='educationRowPictureWashu'>
+                        <img src='washuPicture.png' class='washuLogo'>
+                    </div>
+                    <div class='educationRowWords'>
+                        <ul>
+                            <li>I'm a rising sophomore at Washington University in St. Louis pursuing a degree in Neuroscience </li> <br>
+                            <li>Some classes I've taken that I liked: Psych 3195 Abnormal Child Psychology, BIOL 2960 Principles of Biology I, Chem 111 General Chemistry I, Chem 112 General Chemistry II, Chem 152 General Chemistry Lab I </li><br>
+                            <li>Hobbies: running, coding, watching Marvel movies, trying to bake </li><br>
+                            <li>I'm interested in medicine and research and hope to become a doctor someday</li>
+                    </div>
+                </div>
         </div>
 
-        <div class='educationDiv'>
+       <!-- <div class='educationDiv'>
             <h2 class='divTitles'>Education</h2>
             <hr class='lineUnderneathDivTitles'>
 
@@ -31,39 +51,25 @@ include('config/init.php');
                         <img src='washuPicture.png' class='washuLogo'>
                     </div>
                     <div class='educationRowWords'>
-                        <h4>Washington University in St. Louis</h4>
+                        <h4>Washington University in St. Louis</h4> 
                             <p>August 2018-May 2022</p>
-                                <p>Some words about WashU</p>
+                            <br>
+                                <p>I am currently a rising sophomore pursuing a degree in Neuroscience. </p>
                     </div>
                 </div>
-                <div class='educationRowBradshaw'>
+                 <div class='educationRowBradshaw'>
                     <div class='educationRowPictureBradshaw'>
                         <img src='bcsLogo.png' class='bcsLogo'>
                     </div>
-                    <div class='educationRowWords'>
+                   <div class='educationRowWords'>
                         <h4>Bradshaw Christian High School</h4>
                             <p>August 2014-June 2018</p>
                                 <p>Some words about Bradshaw</p>
                     </div>
-                </div>
+                </div> -->
         </div>
 
-       <!-- <div class='educationDivContainer'>
-            <div class='washuLogo'>
-                <img src='washuLogo.jpg' class='washulogo'> 
-            </div>
-            <div class='educationWords'>
-                <p class='educationWordTitles'>Washington University in St. Louis </p> 
-                    <p>August 2018-June 2022</p>
-                    <p>Words about college</p><br>
-
-                <p class='educationWordTitles'>Bradshaw Christian High School<p>
-                    <p>August 2014-June 2018</p>
-                    <p>Words about high school </p>
-            </div>
-            
-        </div> -->
-
+    
         <div class='thingsIveDoneDiv'>
             <h2 class='divTitles'>Things I've done</h2>
         </div>
