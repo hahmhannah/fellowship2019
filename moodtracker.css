@@ -210,9 +210,13 @@ li a:active{
 
 
 
+
+
+
 .dateDiv{
     height:70px;
     font-size: 24px;
+
 }
 
 .mainParentDiv{
@@ -220,6 +224,61 @@ li a:active{
     background-color:lightgray;
     margin:25px;
     padding-bottom:15px;
+    display:flex;
+    flex-direction:row;
+    border-radius:20px;
   
+}
 
+.trackerInfoBox{
+    background-color:lightpink;
+    height:569;
+    width:500;
+    margin-left:25px;
+    margin-top:25px;
+    border-radius:10px;
+
+}
+
+.trackerInfoBoxForm{
+    font-size:12px;
+}
+
+.personalInfoBox{
+    background-color:lightgreen;
+    height:569;
+    width:815px;
+    margin-top:25px;
+    margin-left:25px;
+    display:flex;
+    flex-direction:column;
+    border-radius:10px;
+}
+
+.personalInfoReminders{
+    background-color:lightgoldenrodyellow;
+    height:236px;
+    width:755px;
+    margin-top:10px;
+    margin-left:30px;
+    border-radius:5px;
+}
+
+.personalInfoGrateful{
+    background-color:lightyellow;
+    height:360px;
+    width:755px;
+    margin-top:10px;
+    margin-left:30px;
+    border-radius:5px;
+}
+
+.personalInfoNotes{
+    background-color:white;
+    height:520px;
+    width:755px;
+    margin-top:10px;
+    margin-bottom:10px;
+    margin-left:30px;
+    border-radius:5px;
 }
