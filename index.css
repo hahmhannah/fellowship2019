@@ -248,7 +248,7 @@ li a:active{
 }
 
 .trackerInfoBox{
-    background-color:rgb(222, 220, 220);
+    background-color:white;
     height:569;
     width:500;
     margin-left:15px;
@@ -262,7 +262,7 @@ li a:active{
 }
 
 .personalInfoBox{
-    background-color:rgb(222, 220, 220);
+    background-color:white;
     height:569;
     width:815px;
     margin-top:25px;
@@ -273,7 +273,7 @@ li a:active{
 }
 
 .personalInfoReminders{
-    background-color:white;
+    background-color:rgb(223, 244, 244);
     height:236px;
     width:755px;
     margin-top:10px;
@@ -282,7 +282,7 @@ li a:active{
 }
 
 .personalInfoGrateful{
-    background-color:white;
+    background-color:rgb(254, 217, 222);
     height:360px;
     width:755px;
     margin-top:10px;
@@ -291,7 +291,7 @@ li a:active{
 }
 
 .personalInfoNotes{
-    background-color:white;
+    background-color:#fafad2;
     height:520px;
     width:755px;
     margin-top:10px;
