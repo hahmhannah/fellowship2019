@@ -7,6 +7,7 @@
     height:55px;
     background-color:#54544F;
     list-style-type: none; 
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .navBarParent{
@@ -214,15 +215,36 @@ li a:active{
 
 
 .dateDiv{
-    height:70px;
+    height:40px;
     font-size: 24px;
 
+}
+
+.dateWords{
+    margin-top:20px;
+    margin-left:20px;
+    font-size:30px;
+}
+
+.arrowLeft{
+    width: 0; 
+    height: 0; 
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent; 
+    border-right:10px solid black;
+    margin-top:250px; 
+    margin-left:10px;
+      
+}
+
+.dailyLogTitle{
+    font-size:20px;
 }
 
 .mainParentDiv{
     height:600px;
     background-color:lightgray;
-    margin:25px;
+    margin: 12px 25px 25px 25px;
     padding-bottom:15px;
     display:flex;
     flex-direction:row;
@@ -234,7 +256,7 @@ li a:active{
     background-color:lightpink;
     height:569;
     width:500;
-    margin-left:25px;
+    margin-left:15px;
     margin-top:25px;
     border-radius:10px;
 

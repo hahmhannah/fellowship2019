@@ -16,11 +16,11 @@ function insertNewQuestionnaireData($questionnaireId, $date, $time, $mood, $stre
 }  */  //NOW() is a function (not passed through)
 
 function insertNewQuestionnaireData($accountId, $questionnaireBeverage, $questionnaireBeverageOther, $beverageSpecific, $howMuchBeverage, $howMuchWater, 
-$sleep, $stress, $breakfast, $lunch, $exercise){
+$sleep, $stress, $breakfast, $lunch, $exercise, $personalInfoBoxReminders, $personalInfoBoxGrateful, $personalInfoBoxNotes){
     dbQuery(
         '   
-            INSERT INTO questionnaire(accountId, questionnaireBeverage, questionnaireBeverageOther, beverageSpecific, howMuchBeverage, howMuchWater, sleep, stress, breakfast, lunch,  exercise, c_time)
-            VALUES(:accountId, :questionnaireBeverage, :questionnaireBeverageOther, :beverageSpecific, :howMuchBeverage, :howMuchWater, :sleep, :stress, :breakfast, :lunch, :exercise, NOW())
+            INSERT INTO questionnaire(accountId, questionnaireBeverage, questionnaireBeverageOther, beverageSpecific, howMuchBeverage, howMuchWater, sleep, stress, breakfast, lunch,  exercise, personalInfoBoxReminders, personalInfoBoxGrateful, personalInfoBoxNotes, c_time )
+            VALUES(:accountId, :questionnaireBeverage, :questionnaireBeverageOther, :beverageSpecific, :howMuchBeverage, :howMuchWater, :sleep, :stress, :breakfast, :lunch, :exercise, :personalInfoBoxReminders, :personalInfoBoxGrateful, :personalInfoBoxNotes, NOW())
         ',
         [
            'accountId' => $accountId, 
@@ -33,7 +33,10 @@ $sleep, $stress, $breakfast, $lunch, $exercise){
            'stress' => $stress,
            'breakfast' => $breakfast,
            'lunch' => $lunch,
-           'exercise' => $exercise
+           'exercise' => $exercise,
+           'personalInfoBoxReminders' => $personalInfoBoxReminders,
+           'personalInfoBoxGrateful' => $personalInfoBoxGrateful,
+           'personalInfoBoxNotes' => $personalInfoBoxNotes
            
         ]
 

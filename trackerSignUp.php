@@ -1,5 +1,5 @@
 <?php
-    include('config/init.php');
+include('config/init.php');
 
 if(isset($_REQUEST['newAccount'])){
     insertNewAccount(
