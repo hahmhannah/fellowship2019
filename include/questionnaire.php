@@ -15,17 +15,17 @@ function insertNewQuestionnaireData($questionnaireId, $date, $time, $mood, $stre
         );
 }  */  //NOW() is a function (not passed through)
 
-function insertNewQuestionnaireData($accountId, $questionnaireBeverage, /*$questionnaireBeverageOther, */ $beverageSpecific, $howMuchBeverage, $howMuchWater, 
-$sleep, $stress, $breakfast, $lunch, $exercise, $questionnaireComments, $mood){
+function insertNewQuestionnaireData($accountId, $questionnaireBeverage, $questionnaireBeverageOther, $beverageSpecific, $howMuchBeverage, $howMuchWater, 
+$sleep, $stress, $breakfast, $lunch, $exercise, $personalInfoBoxReminders, $personalInfoBoxGrateful, $personalInfoBoxNotes){
     dbQuery(
         '   
-            INSERT INTO questionnaire(accountId, questionnaireBeverage,  beverageSpecific, howMuchBeverage, howMuchWater, sleep, stress, breakfast, lunch, questionnaireComments, mood, exercise, c_time)
-            VALUES(:accountId, :questionnaireBeverage,  :beverageSpecific, :howMuchBeverage, :howMuchWater, :sleep, :stress, :breakfast, :lunch, :questionnaireComments, :mood, :exercise, NOW())
+            INSERT INTO questionnaire(accountId, questionnaireBeverage, questionnaireBeverageOther, beverageSpecific, howMuchBeverage, howMuchWater, sleep, stress, breakfast, lunch,  exercise, personalInfoBoxReminders, personalInfoBoxGrateful, personalInfoBoxNotes, c_time )
+            VALUES(:accountId, :questionnaireBeverage, :questionnaireBeverageOther, :beverageSpecific, :howMuchBeverage, :howMuchWater, :sleep, :stress, :breakfast, :lunch, :exercise, :personalInfoBoxReminders, :personalInfoBoxGrateful, :personalInfoBoxNotes, NOW())
         ',
         [
            'accountId' => $accountId, 
            'questionnaireBeverage' => $questionnaireBeverage,
-          
+           'questionnaireBeverageOther' => $questionnaireBeverageOther,
            'beverageSpecific' => $beverageSpecific,
            'howMuchBeverage' => $howMuchBeverage,
            'howMuchWater' => $howMuchWater,
@@ -34,10 +34,10 @@ $sleep, $stress, $breakfast, $lunch, $exercise, $questionnaireComments, $mood){
            'breakfast' => $breakfast,
            'lunch' => $lunch,
            'exercise' => $exercise,
-           'questionnaireComments' => $questionnaireComments,
-           'mood' => $mood
+           'personalInfoBoxReminders' => $personalInfoBoxReminders,
+           'personalInfoBoxGrateful' => $personalInfoBoxGrateful,
+           'personalInfoBoxNotes' => $personalInfoBoxNotes
            
         ]
-
         );
 }
