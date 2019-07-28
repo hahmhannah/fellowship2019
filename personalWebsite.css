@@ -10,6 +10,19 @@
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.29);
 }
 
+a.headerLinks:link{
+    text-decoration:none;
+    color:black;
+}
+
+a.headerLinks:visited{
+    color:black
+}
+
+a.headerLinks:hover{
+    color:lightgrey;
+}
+
 .mainPagePictureDiv{
     height:754px;
     background-color:lightgrey;
@@ -84,13 +97,13 @@ a{
 }
 
 .educationRowPictureWashu{
-    margin-left:200px;
+    margin-left:250px;
     margin-top:50px;
 }
 
 .educationRowWords{
     width:650px;
-    margin-left:150px;
+    margin-left:100px;
     margin-top:75px;
     font-size:16px;
     font-family:arial;
@@ -156,15 +169,14 @@ a{
 }
 
 .thingsIveDoneLACRMPicture{
-    margin-left:200px;
+    margin-left:100px;
     margin-top:50px;
 }
 
 .thingsIveDoneLACRMWords{
-    margin-left:200px;
     width:650px;
-    margin-left:150px;
-    margin-top:75px;
+    margin-left:250px;
+    margin-top:50px;
     font-size:16px;
     font-family:arial;
 }
@@ -178,15 +190,14 @@ a{
 }
 
 .thingsIveDoneResearchPicture{
-    margin-left:200px;
+    margin-left:100px;
     margin-top:50px;
 }
 
 .thingsIveDoneResearchWords{
-    margin-left:200px;
     width:650px;
-    margin-left:150px;
-    margin-top:75px;
+    margin-left:250px;
+    margin-top:50px;
     font-size:16px;
     font-family:arial;
 }
@@ -195,30 +206,69 @@ a{
     height:300px;
     display:flex;
     margin-top:50px;
+  
     
 }
 
 .thingsIveDoneKSAPicture{
-    margin-left:200px;
+    margin-left:100px;
 }
 
 .thingsIveDoneKSAWords{
-    margin-left:200px;
     width:650px;
-    margin-left:150px;
+    margin-left:250px;
     font-size:16px;
     font-family:arial;
 }
 
 .myThoughtsDiv{
-    height:500px;
+  
     background-color:white;
   
 }
 
+.myThoughtsLACRMExperience{
+    display:flex;
+}
+
+.myThoughtsLACRMExperiencePicture{
+    margin-left:250px;
+    margin-top:75px;
+
+}
+
+.myThoughtsLACRMExperienceWords{
+    width:650px;
+    margin-left:100px;
+    margin-top:75px;
+    font-size:16px;
+    font-family:arial;
+    
+}
+
+.myThoughtsGoals{
+    display:flex;
+    margin-bottom:50px;
+}
+
+.myThoughtsGoalsPicture{
+    margin-left:250px;
+    margin-top:75px;
+
+}
+
+.myThoughtsGoalsWords{
+    width:650px;
+    margin-left:100px;
+    margin-top:100px;
+    font-size:16px;
+    font-family:arial;
+    
+}
+
 .footerContactDiv{
     height:300px;
-    background-color:lightblue;
+    background-color:#B4C2C8;
    
 }
 
