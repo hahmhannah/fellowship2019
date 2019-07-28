@@ -86,6 +86,37 @@ include('config/init.php');
     
         <div class='thingsIveDoneDiv'>
             <h2 class='divTitles'>Things I've done</h2>
+            <hr class='lineUnderneathDivTitles'>
+                <div class='thingsIveDoneLACRM'>
+                    <div class='thingsIveDoneLACRMPicture'>
+                        <img src='pictureLACRM.png' class='logoLACRM'>
+                    </div>
+                    <div class='thingsIveDoneLACRMWords'>
+                        <h3 class='wordDivTitles'>Summer 2019 Coding Fellow @ Less Annoying CRM</h3>
+                            <br>
+                        <p>Blurb about coding fellowship</p>
+                    </div>
+                </div>
+                <div class='thingsIveDoneResearch'>
+                    <div class='thingsIveDoneResearchPicture'>
+                        <img src='pictureResearch.jpg' class='medicineLogo'>
+                    </div>
+                    <div class='thingsIveDoneResearchWords'>
+                        <h3 class='wordDivTitles'>Gereau Lab Research Assistant </h3>
+                            <br>
+                        <p>Pain neurobiology lab</p>
+                    </div>
+                </div>
+                <div class='thingsIveDoneKSA'>
+                    <div class='thingsIveDoneKSAPicture'>
+                        <img src='pictureKSA.png' class='logoKSA'>
+                    </div>
+                    <div class='thingsIveDoneKSAWords'>
+                        <h3 class='wordDivTitles'>Korean Student Association </h3>
+                            <br>
+                        <p>freshman rep and sustainability</p>
+                    </div>
+                </div>
         </div>
 
         <div class='myThoughtsDiv'>

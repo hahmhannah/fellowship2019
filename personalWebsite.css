@@ -7,6 +7,7 @@
     background-color:white;
     height:75px;
     list-style-type: none;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.29);
 }
 
 .mainPagePictureDiv{
@@ -23,6 +24,7 @@
     list-style-type: none;
     flex-wrap:wrap;
     padding:10px 40px;
+   
 } 
 
 .navBarChild1{
@@ -82,12 +84,12 @@ a{
 }
 
 .educationRowPictureWashu{
-    margin-left:150px;
+    margin-left:200px;
     margin-top:50px;
 }
 
 .educationRowWords{
-    width:700px;
+    width:650px;
     margin-left:150px;
     margin-top:75px;
     font-size:16px;
@@ -140,14 +142,77 @@ a{
 
 
 .thingsIveDoneDiv{
-    height:400px;
-    background-color:lightcyan;
+   
+    background-color:rgba(242, 239, 239, 0.975);
   
+  
+}
+
+.thingsIveDoneLACRM{
+    height:300px;
+    display:flex;
+    margin-top:50px;
+  
+}
+
+.thingsIveDoneLACRMPicture{
+    margin-left:200px;
+    margin-top:50px;
+}
+
+.thingsIveDoneLACRMWords{
+    margin-left:200px;
+    width:650px;
+    margin-left:150px;
+    margin-top:75px;
+    font-size:16px;
+    font-family:arial;
+}
+
+
+.thingsIveDoneResearch{
+    height:300px;
+    display:flex;
+    margin-top:50px;
+    
+}
+
+.thingsIveDoneResearchPicture{
+    margin-left:200px;
+    margin-top:50px;
+}
+
+.thingsIveDoneResearchWords{
+    margin-left:200px;
+    width:650px;
+    margin-left:150px;
+    margin-top:75px;
+    font-size:16px;
+    font-family:arial;
+}
+
+.thingsIveDoneKSA{
+    height:300px;
+    display:flex;
+    margin-top:50px;
+    
+}
+
+.thingsIveDoneKSAPicture{
+    margin-left:200px;
+}
+
+.thingsIveDoneKSAWords{
+    margin-left:200px;
+    width:650px;
+    margin-left:150px;
+    font-size:16px;
+    font-family:arial;
 }
 
 .myThoughtsDiv{
     height:500px;
-    background-color:lightgrey;
+    background-color:white;
   
 }
 
