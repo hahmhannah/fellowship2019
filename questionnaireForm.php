@@ -3,11 +3,21 @@ include('config/init.php');
 echologgedInHeader("questionnaire"); 
 $user = getUser($_SESSION['accountId']); 
 $accountId = $user['accountId'];
+$dailyQuestionnaireLogInfo = getDailyQuestionnaireLog($_SESSION['accountId']);
+
+//state of the page 
+if(isset($_REQUEST['day'])){
+  $date = $_REQUEST['day'];
+}
+else{
+  $date = date('Y-m-d');
+}
 
 if(isset($_REQUEST['NewQuestionnaireData'])){
   
    insertNewQuestionnaireData(
        $accountId,
+       $date,
        $_REQUEST['questionnaireBeverage'],
        $_REQUEST['questionnaireBeverageOther'], 
        $_REQUEST['beverageSpecific'], 
@@ -26,13 +36,7 @@ if(isset($_REQUEST['NewQuestionnaireData'])){
 ); 
  
 } 
-//state of the page 
-if(isset($_REQUEST['day'])){
-  $date = $_REQUEST['day'];
-}
-else{
-  $date = date('Y-m-d');
-}
+
 ?>
 
     <html>
@@ -57,7 +61,7 @@ else{
                             </select><br /> 
                             <br>
                       If more than 1, please list them:
-                      <input type='text'  name='questionnaireBeverageOther' /><br />
+                      <input type='text'  name='questionnaireBeverageOther' value='<?php echo $dailyQuestionnaireLogInfo['questionnaireBeverageOther'] ?>' /><br />
                       <br>
 
                       Please specify what kind of the above beverage you drank today (ie black coffee, green tea):
@@ -130,7 +134,7 @@ else{
                 <input type='submit' name='NewQuestionnaireData' value='submit' />
               </div>
               
-              <div class='rightArrowDiv'><a href='/questionnaireForm.php'><div class='arrowRight'></div></a></div>
+              <div class='rightArrowDiv'><a href='/questionnaireForm.php?day=<?php echo date('Y-m-d', strtotime('+1 day', strtotime($date))) ?>'><div class='arrowRight'></div></a></div>
                  
             </div>
           </form>

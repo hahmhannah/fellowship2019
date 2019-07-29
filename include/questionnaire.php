@@ -15,15 +15,16 @@ function insertNewQuestionnaireData($questionnaireId, $date, $time, $mood, $stre
         );
 }  */  //NOW() is a function (not passed through)
 
-function insertNewQuestionnaireData($accountId, $questionnaireBeverage, $questionnaireBeverageOther, $beverageSpecific, $howMuchBeverage, $howMuchWater, 
+function insertNewQuestionnaireData($accountId, $date, $questionnaireBeverage, $questionnaireBeverageOther, $beverageSpecific, $howMuchBeverage, $howMuchWater, 
 $sleep, $stress, $breakfast, $lunch, $exercise, $personalInfoBoxReminders, $personalInfoBoxGrateful, $personalInfoBoxNotes){
     dbQuery(
         '   
-            INSERT INTO questionnaire(accountId, questionnaireBeverage, questionnaireBeverageOther, beverageSpecific, howMuchBeverage, howMuchWater, sleep, stress, breakfast, lunch,  exercise, personalInfoBoxReminders, personalInfoBoxGrateful, personalInfoBoxNotes, c_time )
-            VALUES(:accountId, :questionnaireBeverage, :questionnaireBeverageOther, :beverageSpecific, :howMuchBeverage, :howMuchWater, :sleep, :stress, :breakfast, :lunch, :exercise, :personalInfoBoxReminders, :personalInfoBoxGrateful, :personalInfoBoxNotes, NOW())
+            INSERT INTO questionnaire(accountId, date, questionnaireBeverage, questionnaireBeverageOther, beverageSpecific, howMuchBeverage, howMuchWater, sleep, stress, breakfast, lunch,  exercise, personalInfoBoxReminders, personalInfoBoxGrateful, personalInfoBoxNotes, c_time )
+            VALUES(:accountId, :date, :questionnaireBeverage, :questionnaireBeverageOther, :beverageSpecific, :howMuchBeverage, :howMuchWater, :sleep, :stress, :breakfast, :lunch, :exercise, :personalInfoBoxReminders, :personalInfoBoxGrateful, :personalInfoBoxNotes, NOW())
         ',
         [
            'accountId' => $accountId, 
+           'date' => $date,
            'questionnaireBeverage' => $questionnaireBeverage,
            'questionnaireBeverageOther' => $questionnaireBeverageOther,
            'beverageSpecific' => $beverageSpecific,
@@ -41,4 +42,16 @@ $sleep, $stress, $breakfast, $lunch, $exercise, $personalInfoBoxReminders, $pers
         ]
 
         );
+}
+
+function getDailyQuestionnaireLog($accountId){
+    $dailyQuestionnaireLogInfo = dbQuery('
+    SELECT *
+    FROM questionnaire
+    WHERE accountId = :accountId', 
+    [
+        'accountId' => $accountId, 
+        
+    ])->fetch();                             
+return @$dailyQuestionnaireLogInfo; //this is an array
 }
