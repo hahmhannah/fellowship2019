@@ -33,7 +33,7 @@ include('config/init.php');
         </div>
 
         <div class='getToKnowMeDiv'>
-            <h2 class='divTitles'>Get To Know Me</h2>
+            <h2 class='divTitles'>Who Am I?</h2>
             <hr class='lineUnderneathDivTitles'>
 <!--
             <div class='educationRowBradshaw'>
@@ -150,9 +150,12 @@ include('config/init.php');
                         <img src='pictureLACRM.png' class='logoLACRM'>
                     </div>
                     <div class='myThoughtsLACRMExperienceWords'>
-                        <h3 class='wordDivTitles'>my lacrm experience</h3>
+                        <h3 class='wordDivTitles'>My Less Annoying Experience</h3>
                             <br>
-                        <p>blah blah </p>
+                        <p>I did not expect to stay in St. Louis for the summer. But for the past 2 and half months, I have spent my days at the Less Annoying CRM office in downtown St. Louis 
+                           learning how to code, exposing myself to the tech industry, and watching the pile of La Croix boxes get smaller and smaller. 
+                        </p> <br>
+                        <p>Read more</p>
                     </div>
                 </div>
                 <div class='myThoughtsGoals'>
@@ -160,9 +163,13 @@ include('config/init.php');
                         <img src='pictureResearch.jpg' class='medicineLogo'>
                     </div>
                     <div class='myThoughtsGoalsWords'>
-                        <h3 class='wordDivTitles'>Goals </h3>
+                        <h3 class='wordDivTitles'>Goals for the upcoming semester</h3>
                             <br>
-                        <p>Pain neurobiology lab</p>
+                        <p>The fall 2019 semester of school is quickly approaching which means new classes, new experiences, and new challenges. 
+                            With all the changes that are soon going to happen in my life, I'm going to need to adapt to get the most I can out
+                            of the semester. Here are some of my goals for Fall 2019. 
+                        </p><br>
+                        <p>Read more</p>
                     </div>
                 </div>
                 
