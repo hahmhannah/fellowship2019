@@ -237,6 +237,19 @@ li a:active{
       
 }
 
+.arrowRight{
+    width: 0; 
+    height: 0; 
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-left: 10px solid black;
+    margin-top:250px; 
+    margin-left:10px;
+    margin-right:10px;
+    
+      
+}
+
 .dailyLogTitle{
     font-size:20px;
 }
