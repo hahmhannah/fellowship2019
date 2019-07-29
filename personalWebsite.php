@@ -91,7 +91,10 @@ include('config/init.php');
                     <div class='thingsIveDoneLACRMWords'>
                         <h3 class='wordDivTitles'>Summer 2019 Coding Fellow @ Less Annoying CRM</h3>
                             <br>
-                        <p>Blurb about coding fellowship</p>
+                        <p>Learned how to code with HTML, CSS, PHP, Javascript, and MySQL at Less Annoying CRM</p> <br>
+                        <p>Created an e-diary website that allows you to track daily mood, stress, and habits, and provides a place to 
+                            store your thoughts and reflect.  </p> <br>
+                        <p>Created this personal website. </p>
                     </div>
                     <div class='thingsIveDoneLACRMPicture'>
                         <img src='pictureLACRM.png' class='logoLACRM'>
@@ -99,9 +102,11 @@ include('config/init.php');
                 </div>
                 <div class='thingsIveDoneResearch'>
                     <div class='thingsIveDoneResearchWords'>
-                        <h3 class='wordDivTitles'>Gereau Lab Research Assistant </h3>
+                        <h3 class='wordDivTitles'>Gereau Pain Neurobiology Lab Research Assistant </h3>
                             <br>
-                        <p>Pain neurobiology lab</p>
+                        <p>Trained in lab procedures such as DNA precipitation, PCR, and gel electrophoresis. </p> <br>
+                        <p>In the process being trained in mouse blood perfusions. </p> <br>
+                        <p>Involved in mouse data entry and organization. </p> <br>
                     </div>
                     <div class='thingsIveDoneResearchPicture'>
                         <img src='pictureResearch.jpg' class='medicineLogo'>
@@ -109,9 +114,12 @@ include('config/init.php');
                 </div>
                 <div class='thingsIveDoneKSA'>
                     <div class='thingsIveDoneKSAWords'>
-                        <h3 class='wordDivTitles'>Korean Student Association </h3>
+                        <h3 class='wordDivTitles'>WUSTL Korean Student Association </h3>
                             <br>
-                        <p>freshman rep and sustainability</p>
+                        <p>Freshman representative in KSA, a club to share Korean culture with others</p><br>
+                        <p>Promoted KSA events to peers as freshman representative</p><br>
+                        <p>Helped plan, promote, and put on 2019 Spirit of Korea, annual KSA spring festival </p><br>
+                        <p>Performed in Open Dance 2019 for KSA</p>
                     </div>
                     <div class='thingsIveDoneKSAPicture'>
                         <img src='pictureKSA.png' class='logoKSA'>
