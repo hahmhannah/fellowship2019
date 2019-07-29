@@ -26,16 +26,22 @@ if(isset($_REQUEST['NewQuestionnaireData'])){
 ); 
  
 } 
-
+//state of the page 
+if(isset($_REQUEST['day'])){
+  $date = $_REQUEST['day'];
+}
+else{
+  $date = date('Y-m-d');
+}
 ?>
 
     <html>
       <body>
-        <div class='dateDiv'><h2 class='dateWords'> <?php echo "Today's Date: " .date('Y/m/d', strtotime('-1 day')); ?></h2> </div>
+        <div class='dateDiv'><h2 class='dateWords'> <?php echo "Today's Date: " .date('l F jS, Y', strtotime($date)); ?></h2> </div>
         
         <form action='' method='post' class='trackerInfoBoxForm'> 
         <div class='mainParentDiv'>
-          <div class='arrowDiv'> <a href='/questionnaireForm.php'><div class='arrowLeft'></div></a></div>
+          <div class='arrowDiv'> <a href='/questionnaireForm.php?day=<?php echo date('Y-m-d', strtotime('-1 day', strtotime($date))) ?>'><div class='arrowLeft'></div></a></div>
               <div class='trackerInfoBox'>
                 
                 <h3 class='dailyLogTitle'>Daily Log</h3>
