@@ -160,7 +160,7 @@ include('config/init.php');
                         <img src='pictureResearch.jpg' class='medicineLogo'>
                     </div>
                     <div class='myThoughtsGoalsWords'>
-                        <h3 class='wordDivTitles'>Gereau Lab Research Assistant </h3>
+                        <h3 class='wordDivTitles'>Goals </h3>
                             <br>
                         <p>Pain neurobiology lab</p>
                     </div>
