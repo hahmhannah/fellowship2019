@@ -7,7 +7,7 @@
     background-color:white;
     height:75px;
     list-style-type: none;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.29);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 a.headerLinks:link{
@@ -221,9 +221,13 @@ a{
     font-family:arial;
 }
 
+.skillsDiv{
+    
+}
+
 .myThoughtsDiv{
   
-    background-color:white;
+    background-color:rgba(242, 239, 239, 0.975);
   
 }
 
@@ -248,7 +252,7 @@ a{
 
 .myThoughtsGoals{
     display:flex;
-    margin-bottom:50px;
+    
 }
 
 .myThoughtsGoalsPicture{

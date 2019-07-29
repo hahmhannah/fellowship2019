@@ -118,7 +118,22 @@ include('config/init.php');
                     </div>
                 </div>
         </div>
-
+        <div class='skillsDiv'>
+            <h2 class='divTitles'>Skills</h2>
+            <hr class='lineUnderneathDivTitles'>
+                <div class='skill1'>
+                    <div class='skill1Picture'></div>
+                    <div class='skill1Words'></div>
+                </div>
+                <div class='skill2'>
+                    <div class='skill1Picture'></div>
+                    <div class='skill1Words'></div>
+                </div>
+                <div class='skill3'>
+                    <div class='skill1Picture'></div>
+                    <div class='skill1Words'></div>
+                </div>
+        </div>
         <div class='myThoughtsDiv'>
             <h2 class='divTitles'>My Thoughts</h2>
             <hr class='lineUnderneathDivTitles'>
