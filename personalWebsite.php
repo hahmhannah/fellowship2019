@@ -31,7 +31,7 @@ include('config/init.php');
     
         <div class='mainPagePictureDiv'>
             
-            <div class='mainPageIntroduction'>Hi, I'm Hannah Hahm </div>
+            <div class='mainPageIntroduction'>Hi, I'm Hannah Hahm  </div>
             <div class='mainPageIntroductionSmallText'>student and aspiring researcher </div>
         </div>
 
