@@ -256,23 +256,25 @@ li a:active{
 
 .mainParentDiv{
     height:600px;
-    background-color:lightgray;
-    margin: 12px 25px 25px 25px;
+    background-color:rgb(216, 233, 236);
+    margin: 10px 25px 25px 25px;
     padding-bottom:15px;
     display:flex;
     flex-direction:row;
     border-radius:20px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border:2px solid rgba(71, 57, 57, 0.911);
   
 }
 
 .trackerInfoBox{
-    background-color:lightpink;
+    background-color:rgb(229, 236, 221);
     height:569;
     width:500;
     margin-left:15px;
     margin-top:25px;
     border-radius:10px;
+    border:1px solid gray;
 
 }
 
@@ -281,7 +283,7 @@ li a:active{
 }
 
 .personalInfoBox{
-    background-color:lightgreen;
+    
     height:569;
     width:815px;
     margin-top:25px;
@@ -289,32 +291,64 @@ li a:active{
     display:flex;
     flex-direction:column;
     border-radius:10px;
+   
 }
 
 .personalInfoReminders{
-    background-color:lightgoldenrodyellow;
+    background-color:rgb(253, 246, 239);
     height:236px;
     width:755px;
     margin-top:10px;
     margin-left:30px;
     border-radius:5px;
+    border:1px solid gray;
 }
 
 .personalInfoGrateful{
-    background-color:lightyellow;
+    background-color:rgb(253, 246, 239);
     height:360px;
     width:755px;
     margin-top:10px;
     margin-left:30px;
     border-radius:5px;
+    border:1px solid gray;
 }
 
 .personalInfoNotes{
-    background-color:white;
+    background-color:rgb(253, 246, 239);
     height:520px;
     width:755px;
     margin-top:10px;
     margin-bottom:10px;
     margin-left:30px;
     border-radius:5px;
+    border:1px solid gray;
+}
+
+
+.profilePageMainDiv{
+    background-color:rgb(216, 233, 236);;
+    margin: 30px 25px 25px 25px;
+    border-radius:10px;
+    padding-top:15px;
+    padding-left:25px;
+    padding-right:25px;
+    border:1px solid gray;
+    display:flex;
+}
+
+.textarea{
+    width:200px;
+}
+
+.trackerInfoBoxForm{
+    font-size:14px;
+}
+
+.avatarPic{
+    margin-left:75px;
+}
+
+.profileFormDiv{
+   
 }

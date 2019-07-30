@@ -60,10 +60,11 @@ if(isset($_REQUEST['NewQuestionnaireData'])){
                                 <option value='none'>none</option>
                             </select><br /> 
                             <br>
-                      If more than 1, please list them:
+                    
+                      How many cups of the above beverage did you drink?:
                       <input type='text'  name='questionnaireBeverageOther' value='<?php echo $dailyQuestionnaireLogInfo['questionnaireBeverageOther'] ?>' /><br />
-                      <br>
-
+                      
+                    <!--
                       Please specify what kind of the above beverage you drank today (ie black coffee, green tea):
                       <input type='text'  name='beverageSpecific' /><br />
 
@@ -71,10 +72,10 @@ if(isset($_REQUEST['NewQuestionnaireData'])){
                       How much of the beverage chosen above did you drink today?:<br>
                       <input type='text'  name='howMuchBeverage' /><br />
                      
-
+                      -->
 
                       <br>
-                      How much water did you drink today?:<br>
+                      How many cups of water did you drink today?:<br>
                       <input type='text'  name='howMuchWater' /><br />
                      
 
@@ -84,21 +85,20 @@ if(isset($_REQUEST['NewQuestionnaireData'])){
                      
 
                       <br>
-                        How much stress did you experience today?:<br>
+                      How much stress did you experience today?:<br>
                       <input type="radio" required name="stress" value="little to no stress" >Little to no stress<br>
                       <input type="radio" name='stress' value="some stress"> some/moderate stress<br>
                       <input type="radio" name="stress" value="high stress" > high stress<br>
                       
                       <br>
-                        Did you eat breakfast today?:
-
-                      <input type="radio" required name="breakfast" value="yes" > yes
-                      <input type="radio" name='breakfast' value="no"> no<br>
-
+                      What did you eat today?:<br>
+                      <input type="checkbox"  name="breakfast" value="yes" > breakfast<br>
+                      <input type="checkbox" name='breakfast' value="no"> lunch<br>
+                      <input type="checkbox"   name="lunch" value="yes" > dinner
                       <br>
-                        Did you eat lunch today?:
+                        <!-- Did you eat lunch today?:
                         <input type="radio"  required name="lunch" value="yes" > yes
-                        <input type="radio"  name='lunch' value="no "> no<br>
+                        <input type="radio"  name='lunch' value="no "> no<br> -->
                             
                         <br>
                         How much exercise did you do today?<br>
@@ -107,26 +107,37 @@ if(isset($_REQUEST['NewQuestionnaireData'])){
                         <input type="radio" name='exercise' value="medium intensity"> medium intensity (ie light sweat, can talk but with some effort)<br>
                         <input type="radio" name="exercise" value="high intensity" > high intensity (ie unable to say more than a few words)<br>
                             
-                        
+                        <br>
+                      How are you feeling today?<br>
+                      <input type="checkbox"  name="mood" value="yes" > content
+                      <input type="checkbox" name='mood' value="no"> happy<br>
+                      <input type="checkbox"   name="mood" value="yes" > sad 
+                      <input type="checkbox"   name="mood" value="yes" > tired <br>
+                      <input type="checkbox"   name="lunch" value="yes" > angry 
+                      <input type="checkbox"   name="lunch" value="yes" > calm <br>
+                      <input type="checkbox"   name="lunch" value="yes" > anxious 
+                      <input type="checkbox"   name="lunch" value="yes" > restless <br>
+                      <input type="checkbox"   name="lunch" value="yes" > frustrated 
+                      <br>
                         
               </div>
 
               <div class='personalInfoBox'>
                 <div class='personalInfoReminders'>
-                  Reminders:
-                    <textarea  name='personalInfoBoxReminders'></textarea>
+                  Reminders:     
+                    <textarea  name='personalInfoBoxReminders' cols='109' rows='6'></textarea>
                       <br> 
                  
                 </div>
                 <div class='personalInfoGrateful'>
                   Today I'm grateful for:
-                    <textarea  name='personalInfoBoxGrateful' ></textarea>
+                    <textarea  name='personalInfoBoxGrateful' cols='99' rows='11' ></textarea>
                       <br>
                     
                 </div>
                 <div class='personalInfoNotes'>
                   Notes:
-                    <textarea  name='personalInfoBoxNotes' ></textarea>
+                    <textarea  name='personalInfoBoxNotes' cols='114' rows='20'></textarea>
 
                     
                     

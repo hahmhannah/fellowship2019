@@ -56,6 +56,8 @@ if(isset($_REQUEST['happinessQuestionnaireInput'])){
 
 
 <html>
+<div class='profilePageMainDiv'>
+<div class='profileFormDiv'>
   <h2>Profile</h2>
   <p>This is your profile page. Please fill this out only once. The daily questionnaire is down below. </p> 
     <form action='' method='post'>  
@@ -131,8 +133,15 @@ if(isset($_REQUEST['happinessQuestionnaireInput'])){
 
             
             <br />
+        
+        </div>
 
+        <div class='avatarDiv'>
+            <img src='avatarImage2.png' class='avatarPic'>
+        </div>
 
+    </div>
+<!--
             <h2>Happiness Scale</h2>
             <p> 
             Please fill out this questionnaire after filling out the last daily questionnaire. </p>
@@ -196,13 +205,7 @@ if(isset($_REQUEST['happinessQuestionnaireInput'])){
            
 
 <p> Happiness Scale Citation: Lyubomirsky, S., & Lepper, H. (1999). A measure of subjective happiness: Preliminary reliability and construct validation. Social Indicators Research, 46, 137-155. </p>
+            -->
 
-<!--
-//$accountId=getUser($_REQUEST['accountId']); //save number in url as variable
-/* $accountId=$_SESSION['accountId']; */
-//$user = getUser($accountId); 
-//hello user ".$_SESSION['accountId']['email'].". More coming soon.";
 
- 
-
-//$user = getUser($_SESSION['accountId']); -->
+</div>
