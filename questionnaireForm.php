@@ -1,4 +1,4 @@
-<<?php 
+<?php 
 include('config/init.php');
 echologgedInHeader("questionnaire"); 
 $user = getUser($_SESSION['accountId']); 
