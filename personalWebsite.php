@@ -5,7 +5,10 @@ include('config/init.php');
 
 <html>
     <head>
-        <link href='personalWebsite.css' rel='stylesheet' type='text/css'>           
+        <link href="https://fonts.googleapis.com/css?family=Dosis&display=swap" rel="stylesheet">    
+        <link href='personalWebsite.css' rel='stylesheet' type='text/css'> 
+        
+             
     </head>
 
 
@@ -32,19 +35,16 @@ include('config/init.php');
             <div class='mainPageIntroductionSmallText'>student and aspiring researcher </div>
         </div>
 
-        <div class='getToKnowMeDiv'>
+
+    <div class='mainBackgroundDiv'>
+ 
+        <div class='getToKnowMeDiv'> 
             <h2 class='divTitles'>Who Am I?</h2>
             <hr class='lineUnderneathDivTitles'>
-<!--
-            <div class='educationRowBradshaw'>
-                    <div class='educationRowPictureBradshaw'>
-                        <img src='bcsLogo.png' class='bcsLogo'>
-                    </div>
-            </div>          --> 
             
             <div class='educationRowWashu'>
                     <div class='educationRowPictureWashu'>
-                        <img src='washuPicture.png' class='washuLogo'>
+                        <img src='profilePic.JPG' class='profilePic'>
                     </div>
                     <div class='educationRowWords'>
                         <ul>
@@ -53,7 +53,7 @@ include('config/init.php');
                             <li>Hobbies: running, coding, watching Marvel movies, trying to bake </li><br>
                             <li>I'm interested in medicine and research and hope to become a doctor someday</li>
                     </div>
-                </div>
+            </div>
         </div>
 
        <!-- <div class='educationDiv'>
@@ -81,11 +81,11 @@ include('config/init.php');
                                 <p>Some words about Bradshaw</p>
                     </div>
                 </div> -->
-        </div>
+       
 
     
         <div class='thingsIveDoneDiv'>
-            <h2 class='divTitles'>Things I've done</h2>
+            <h2 class='divTitles'>Experiences</h2>
             <hr class='lineUnderneathDivTitles'>
                 <div class='thingsIveDoneLACRM'>
                     <div class='thingsIveDoneLACRMWords'>
@@ -109,7 +109,7 @@ include('config/init.php');
                         <p>Involved in mouse data entry and organization. </p> <br>
                     </div>
                     <div class='thingsIveDoneResearchPicture'>
-                        <img src='pictureResearch.jpg' class='medicineLogo'>
+                    <img src='washuPicture.png' class='washuLogo'>
                     </div>
                 </div>
                 <div class='thingsIveDoneKSA'>
@@ -129,18 +129,37 @@ include('config/init.php');
         <div class='skillsDiv'>
             <h2 class='divTitles'>Skills</h2>
             <hr class='lineUnderneathDivTitles'>
+            <div class='flexBoxDivSkills'>
                 <div class='skill1'>
-                    <div class='skill1Picture'></div>
-                    <div class='skill1Words'></div>
+                    <div class='skill1Picture'>
+                        <img src='wordCloud2.png' class='wordCloud2'>
+                    </div>
+                    <div class='skill1Words'>
+                        <h4>Coding</h4>
+                        <br>
+                        <p>Languages I know: HTML, CSS, PHP, MySQL, Javascript, R</p>
+                    </div>
                 </div>
                 <div class='skill2'>
-                    <div class='skill1Picture'></div>
-                    <div class='skill1Words'></div>
+                    <div class='skill2Picture'>
+                        <img src='wordCloud3.png' class='wordCloud3'>
+                    </div>
+                    <div class='skill2Words'>
+                    <h4>Languages</h4>
+                        <br>
+                        <p>Languages I know: Korean, Spanish, Italian</p>
+                    </div>
                 </div>
                 <div class='skill3'>
-                    <div class='skill1Picture'></div>
-                    <div class='skill1Words'></div>
+                    <div class='skill3Picture'>
+                        <img src='wordCloud4.png' class='wordCloud4'>
+                    </div>
+                    <div class='skill3Words'>
+                        <h4>Other Technical Skills</h4>
+                        <p>Proficient in Word, Excel, PowerPoint, Google Drive and some experience in iMovie and Procreate</p>
+                    </div>
                 </div>
+            </div>
         </div>
         <div class='myThoughtsDiv'>
             <h2 class='divTitles'>My Thoughts</h2>
@@ -178,8 +197,14 @@ include('config/init.php');
         <div class='footerContactDiv'>
             <h2 class='divTitles'>Contact</h2>
             <hr class='lineUnderneathDivTitles'>
-                
+                <p class='contactWords'>
+                    h.hahm@wustl.edu <br>
+                    <a href='https://www.linkedin.com/in/hannah-hahm-88243718a/' class='LinkedIn'>LinkedIn</a>
+                </p>
         </div>
+
+    </div>
+    
     </body>
 
 

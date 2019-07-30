@@ -1,6 +1,26 @@
 *{
     margin:0;
     padding:0;
+   
+}
+
+html{
+    font-family: 'Actor', sans-serif;
+}
+
+
+/*
+.mainBackgroundDiv{
+    background-color:blue;
+}
+*/
+
+hr{
+    margin-top:50px;
+    margin-left:200px;
+    margin-right:200px;
+    opacity: 0.2;
+    border-color: grey;
 }
 
 .navBarDiv{
@@ -16,7 +36,7 @@ a.headerLinks:link{
 }
 
 a.headerLinks:visited{
-    color:black
+    color:black;
 }
 
 a.headerLinks:hover{
@@ -69,7 +89,7 @@ a{
 .mainPageIntroduction{
     text-align:center;
     font-size:60px;
-    font-family:'Saira Condensed';
+    /* font-family:'Saira Condensed'; */
     padding-top:220px;
     color:black;
 }
@@ -82,14 +102,21 @@ a{
 }
 
 .getToKnowMeDiv{
-    height:550px;
-    
+    height:625px;
+    padding-bottom:50px;
+   
 
+}
+
+.profilePic{
+    border:1px solid rgb(173, 172, 172);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .educationDiv{
     height:600px;
     background-color:lightgrey;
+
 }
 
 .educationRowWashu{
@@ -105,8 +132,8 @@ a{
     width:650px;
     margin-left:100px;
     margin-top:75px;
-    font-size:16px;
-    font-family:arial;
+    font-size:18px;
+    
 }
 
 .educationRowBradshaw{
@@ -146,8 +173,8 @@ a{
 .divTitles{
     text-align:center;
     padding-top:85px;
-    font-size:40px;
-    font-family:'arial';
+    font-size:45px;
+    
     
     
 }
@@ -155,8 +182,11 @@ a{
 
 
 .thingsIveDoneDiv{
-   
-    background-color:rgba(242, 239, 239, 0.975);
+   padding-bottom:100px;
+    background-color:#D0E1E6;
+  
+    
+    
   
   
 }
@@ -165,6 +195,8 @@ a{
     height:300px;
     display:flex;
     margin-top:50px;
+    margin-left:100px;
+   
   
 }
 
@@ -175,17 +207,18 @@ a{
 
 .thingsIveDoneLACRMWords{
     width:650px;
-    margin-left:250px;
+    margin-left:150px;
     margin-top:50px;
-    font-size:16px;
-    font-family:arial;
+    font-size:18px;
+   
 }
 
 
 .thingsIveDoneResearch{
     height:300px;
     display:flex;
-    margin-top:50px;
+    margin-top:25px;
+    margin-left:100px;
     
 }
 
@@ -196,16 +229,17 @@ a{
 
 .thingsIveDoneResearchWords{
     width:650px;
-    margin-left:250px;
+    margin-left:150px;
     margin-top:50px;
-    font-size:16px;
-    font-family:arial;
+    font-size:18px;
+ 
 }
 
 .thingsIveDoneKSA{
     height:300px;
     display:flex;
-    margin-top:50px;
+    margin-top:25px;
+    margin-left:100px;
   
     
 }
@@ -216,18 +250,80 @@ a{
 
 .thingsIveDoneKSAWords{
     width:650px;
-    margin-left:250px;
-    font-size:16px;
-    font-family:arial;
+    margin-left:150px;
+    font-size:18px;
+   
 }
 
 .skillsDiv{
+    height:650px;
+    padding-bottom:50px;
     
 }
 
+.flexBoxDivSkills{
+    display:flex;
+}
+
+.skill1{
+    width:400px;
+    text-align:center;
+    margin-top:75px;
+}
+
+
+.skill1Words{
+    font-size:20px;
+    margin-top:25px;
+    width:400px;
+    margin-left:50px;
+}
+
+.wordCloud2{
+    width:400px;
+    margin-left:50px;
+    
+}
+
+.skill2{
+    text-align:center;
+    margin-top:60px;
+    margin-left:100px;
+}
+
+
+.wordCloud3{
+    width:400px;
+}
+
+.skill2Words{
+    margin-top:19px;
+    font-size:20px;
+    width:400px;
+}
+
+.skill3{
+    text-align:center;
+    margin-top:60px;
+    margin-left:80px;
+
+    
+}
+.wordCloud4{
+    width:400px;
+}
+
+.skill3Words{
+    margin-top:16px;
+    font-size:20px;
+    width:400px;
+   
+}
+
 .myThoughtsDiv{
-  
-    background-color:rgba(242, 239, 239, 0.975);
+
+    background-color:#D0E1E6;
+    padding-bottom:150px;
   
 }
 
@@ -245,8 +341,8 @@ a{
     width:650px;
     margin-left:100px;
     margin-top:75px;
-    font-size:16px;
-    font-family:arial;
+    font-size:18px;
+   
     
 }
 
@@ -265,15 +361,37 @@ a{
     width:650px;
     margin-left:100px;
     margin-top:75px;
-    font-size:16px;
-    font-family:arial;
+    font-size:18px;
+  
     
 }
 
 .footerContactDiv{
     height:300px;
-    background-color:#B4C2C8;
+    background-color:#5C6365;
+    padding-bottom:100px;
    
 }
+.contactWords{
+    text-align:center;
+    font-size:20px;
+    margin-top:50px;
+    color:black;
+
+}
+
+a.LinkedIn:link{
+    color:black;
+}
+
+a.LinkedIn:visited{
+    color:black;
+}
+
+.LinkedIn:hover{
+    color:lightgrey;
+}
+
+
 
 
