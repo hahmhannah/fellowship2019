@@ -15,25 +15,25 @@ function insertNewQuestionnaireData($questionnaireId, $date, $time, $mood, $stre
         );
 }  */  //NOW() is a function (not passed through)
 
-function insertNewQuestionnaireData($accountId, $date, $questionnaireBeverage, $questionnaireBeverageOther, $beverageSpecific, $howMuchBeverage, $howMuchWater, 
-$sleep, $stress, $breakfast, $lunch, $exercise, $personalInfoBoxReminders, $personalInfoBoxGrateful, $personalInfoBoxNotes){
+function insertNewQuestionnaireData($accountId, $date, $eat, $questionnaireBeverage, $howMuchBeverage, $howMuchWater, 
+$sleep, $stress, $exercise, $mood, $personalInfoBoxReminders, $personalInfoBoxGrateful, $personalInfoBoxNotes){
     dbQuery(
         '   
-            INSERT INTO questionnaire(accountId, date, questionnaireBeverage, questionnaireBeverageOther, beverageSpecific, howMuchBeverage, howMuchWater, sleep, stress, breakfast, lunch,  exercise, personalInfoBoxReminders, personalInfoBoxGrateful, personalInfoBoxNotes, c_time )
-            VALUES(:accountId, :date, :questionnaireBeverage, :questionnaireBeverageOther, :beverageSpecific, :howMuchBeverage, :howMuchWater, :sleep, :stress, :breakfast, :lunch, :exercise, :personalInfoBoxReminders, :personalInfoBoxGrateful, :personalInfoBoxNotes, NOW())
+            INSERT INTO questionnaire(accountId, date, eat, questionnaireBeverage, howMuchBeverage, howMuchWater, 
+            sleep, stress, exercise, mood, personalInfoBoxReminders, personalInfoBoxGrateful, personalInfoBoxNotes, c_time)
+            VALUES(:accountId, :date,:eat, :questionnaireBeverage, :howMuchBeverage, :howMuchWater, 
+            :sleep, :stress, :exercise, :mood, :personalInfoBoxReminders, :personalInfoBoxGrateful, :personalInfoBoxNotes, NOW())
         ',
         [
            'accountId' => $accountId, 
            'date' => $date,
            'questionnaireBeverage' => $questionnaireBeverage,
-           'questionnaireBeverageOther' => $questionnaireBeverageOther,
-           'beverageSpecific' => $beverageSpecific,
            'howMuchBeverage' => $howMuchBeverage,
            'howMuchWater' => $howMuchWater,
            'sleep' => $sleep,
            'stress' => $stress,
-           'breakfast' => $breakfast,
-           'lunch' => $lunch,
+           'eat' => $eat,
+           'mood' => $mood,
            'exercise' => $exercise,
            'personalInfoBoxReminders' => $personalInfoBoxReminders,
            'personalInfoBoxGrateful' => $personalInfoBoxGrateful,

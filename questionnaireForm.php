@@ -19,14 +19,12 @@ if(isset($_REQUEST['NewQuestionnaireData'])){
        $accountId,
        $date,
        $_REQUEST['questionnaireBeverage'],
-       $_REQUEST['questionnaireBeverageOther'], 
-       $_REQUEST['beverageSpecific'], 
        $_REQUEST['howMuchBeverage'], 
        $_REQUEST['howMuchWater'], 
        $_REQUEST['sleep'], 
        $_REQUEST['stress'],
-       $_REQUEST['breakfast'],
-       $_REQUEST['lunch'],
+       $_REQUEST['eat'],
+       $_REQUEST['mood'],
        $_REQUEST['exercise'],
        $_REQUEST['personalInfoBoxReminders'],
        $_REQUEST['personalInfoBoxGrateful'], 
@@ -62,7 +60,7 @@ if(isset($_REQUEST['NewQuestionnaireData'])){
                             <br>
                     
                       How many cups of the above beverage did you drink?:
-                      <input type='text'  name='questionnaireBeverageOther' value='<?php echo $dailyQuestionnaireLogInfo['questionnaireBeverageOther'] ?>' /><br />
+                      <input type='text'  name='howMuchBeverage' value='<?php echo $dailyQuestionnaireLogInfo['howMuchBeverage'] ?>' /><br />
                       
                     <!--
                       Please specify what kind of the above beverage you drank today (ie black coffee, green tea):
@@ -92,9 +90,9 @@ if(isset($_REQUEST['NewQuestionnaireData'])){
                       
                       <br>
                       What did you eat today?:<br>
-                      <input type="checkbox"  name="breakfast" value="yes" > breakfast<br>
-                      <input type="checkbox" name='breakfast' value="no"> lunch<br>
-                      <input type="checkbox"   name="lunch" value="yes" > dinner
+                      <input type="checkbox"  name="eat" value="breakfast" > breakfast<br>
+                      <input type="checkbox" name='eat' value="lunch"> lunch<br>
+                      <input type="checkbox"   name="eat" value="dinner" > dinner
                       <br>
                         <!-- Did you eat lunch today?:
                         <input type="radio"  required name="lunch" value="yes" > yes
@@ -109,15 +107,15 @@ if(isset($_REQUEST['NewQuestionnaireData'])){
                             
                         <br>
                       How are you feeling today?<br>
-                      <input type="checkbox"  name="mood" value="yes" > content
-                      <input type="checkbox" name='mood' value="no"> happy<br>
-                      <input type="checkbox"   name="mood" value="yes" > sad 
-                      <input type="checkbox"   name="mood" value="yes" > tired <br>
-                      <input type="checkbox"   name="lunch" value="yes" > angry 
-                      <input type="checkbox"   name="lunch" value="yes" > calm <br>
-                      <input type="checkbox"   name="lunch" value="yes" > anxious 
-                      <input type="checkbox"   name="lunch" value="yes" > restless <br>
-                      <input type="checkbox"   name="lunch" value="yes" > frustrated 
+                      <input type="checkbox"  name="mood" value="content" > content
+                      <input type="checkbox" name='mood' value="happy"> happy<br>
+                      <input type="checkbox"   name="mood" value="sad" > sad 
+                      <input type="checkbox"   name="mood" value="tired" > tired <br>
+                      <input type="checkbox"   name="mood" value="angry" > angry 
+                      <input type="checkbox"   name="mood" value="calm" > calm <br>
+                      <input type="checkbox"   name="mood" value="anxious" > anxious 
+                      <input type="checkbox"   name="mood" value="restless" > restless <br>
+                      <input type="checkbox"   name="mood" value="frustrated" > frustrated 
                       <br>
                         
               </div>
