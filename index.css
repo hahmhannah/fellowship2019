@@ -232,23 +232,37 @@ li a:active{
       
 }
 
+.arrowRight{
+    width: 0; 
+    height: 0; 
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-left: 10px solid black;
+    margin-top:250px; 
+    margin-left:10px;
+    margin-right:10px;
+    
+      
+}
+
 .dailyLogTitle{
     font-size:20px;
 }
 
 .mainParentDiv{
     height:600px;
-    background-color:rgb(211, 211, 211);
+    background-color:lightgray;
     margin: 12px 25px 25px 25px;
     padding-bottom:15px;
     display:flex;
     flex-direction:row;
     border-radius:20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   
 }
 
 .trackerInfoBox{
-    background-color:white;
+    background-color:lightpink;
     height:569;
     width:500;
     margin-left:15px;
@@ -262,7 +276,7 @@ li a:active{
 }
 
 .personalInfoBox{
-    background-color:white;
+    background-color:lightgreen;
     height:569;
     width:815px;
     margin-top:25px;
@@ -273,7 +287,7 @@ li a:active{
 }
 
 .personalInfoReminders{
-    background-color:rgb(223, 244, 244);
+    background-color:lightgoldenrodyellow;
     height:236px;
     width:755px;
     margin-top:10px;
@@ -282,7 +296,7 @@ li a:active{
 }
 
 .personalInfoGrateful{
-    background-color:rgb(254, 217, 222);
+    background-color:lightyellow;
     height:360px;
     width:755px;
     margin-top:10px;
@@ -291,7 +305,7 @@ li a:active{
 }
 
 .personalInfoNotes{
-    background-color:#fafad2;
+    background-color:white;
     height:520px;
     width:755px;
     margin-top:10px;
@@ -299,3 +313,4 @@ li a:active{
     margin-left:30px;
     border-radius:5px;
 }
+

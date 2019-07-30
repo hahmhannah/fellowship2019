@@ -3,11 +3,21 @@ include('config/init.php');
 echologgedInHeader("questionnaire");
 $user = getUser($_SESSION['accountId']); 
 $accountId = $user['accountId'];
+$dailyQuestionnaireLogInfo = getDailyQuestionnaireLog($_SESSION['accountId']);
+
+//state of the page 
+if(isset($_REQUEST['day'])){
+  $date = $_REQUEST['day'];
+}
+else{
+  $date = date('Y-m-d');
+}
 
 if(isset($_REQUEST['NewQuestionnaireData'])){
   
   insertNewQuestionnaireData(
       $accountId,
+      $date,
       $_REQUEST['questionnaireBeverage'],
       $_REQUEST['questionnaireBeverageOther'], 
       $_REQUEST['beverageSpecific'], 
