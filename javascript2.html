@@ -15,13 +15,14 @@ data is what is echoed by the file specifically in this case then does whatever 
     <script> 
         function fetchTheData(){
             $.post('backend.php', {}, function(data){
-                console.log(data)
+                $('.contentFromTheServer').html(data);
             });
         }
         
     </script>
 
-
+<!-- callback function now is select div withe the class contentFromTheServer and edit the html inside to have the 
+data that was from the server-->
 
   <input type='button' value='fetch the data' onclick='fetchTheData();'>
 
