@@ -1,8 +1,9 @@
 <html>
-  <head>
+  <head>   <!--first script includes jquery library 3rd party --><!--second script: own javascript for site -->
+
     <script type="text/javascript" src="jquery-3.4.1.min.js"></script> 
     <script type ='text/javascript'>
-        function fadeInHiddenDiv(){
+        function fadeInHiddenDiv(){     
             $('.hiddenInfoDiv').fadeIn();
         }
     </script>
@@ -11,7 +12,12 @@
     <body>    <!--when it's clicked, run javascript but don't do anything with the link -->
         <a href='javascript://' onclick='fadeInHiddenDiv()'>click here for more info</a> 
         <div class='hiddenInfoDiv' style='display:none; background-color:lightblue'>
-            stephanie  
+            hi lol  
         </div>
     </body>
 </html>
+
+<!--php runs: generates html css, js sends to browser and browser uses javascript when the page is sent back
+    script tag doesn't have to be in the head-script tag runs immediately and sometimes runs before html page is loaded
+    so u should say don't run until page is loaded
+-->

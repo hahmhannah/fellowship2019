@@ -1,0 +1,34 @@
+<html>
+    <!--javascript modifies webpage after page starts reloading, interact w/and modify the DOM, onclick=call js function when clicked-->
+    <!--call php functions in html by linking a file 
+
+    calling ajax requests line 10, put file name in parentheses and can pass parameters
+line $.post (ajax request: calling server, calling a diff file to update), {}: any url parameters (form values would go into array), 
+function(data): can pass functions like variables-this is a new function with no name and takes parameter data and logs data to console
+callback funtion: when a thing finishes, then run other function to process--start post and then use callback to say what happens next
+function that runs after ajax request is finished
+data is what is echoed by the file specifically in this case then does whatever happens in {}
+
+-->
+    <script type="text/javascript" src="jquery-3.4.1.min.js"></script> 
+
+    <script> 
+        function fetchTheData(){
+            $.post('backend.php', {}, function(data){
+                console.log(data)
+            });
+        }
+        
+    </script>
+
+
+
+  <input type='button' value='fetch the data' onclick='fetchTheData();'>
+
+  <div class='contentFromTheServer'></div> <!--landing spot for info from backend.php-->
+
+
+
+
+
+</html>
