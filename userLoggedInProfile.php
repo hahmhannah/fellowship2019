@@ -5,20 +5,14 @@
     $accountId = $user['accountId'];
     // $user = getUser($accountId); 
     //$_SESSION['accountId'] = $user; 
-
   
 /* echo " 
-
-
 hello user ".$user['email'].". More coming soon.";
-
-
 */
 /*
 $accountId = $_SESSION['accountId'];
 $profileEdit = getProfileEdit($accountId); //returns whole line from database
 echo $profileEdit;  */
-
 if(isset($_REQUEST['newProfileEdit'])){
     insertNewProfileEdit(
         $accountId,
@@ -32,11 +26,8 @@ if(isset($_REQUEST['newProfileEdit'])){
         $_REQUEST['lifeEvent'], 
         $_REQUEST['numberBeverage'],
         $_REQUEST['stressLevel']
-
         );
     }
-
-
 if(isset($_REQUEST['happinessQuestionnaireInput'])){
     insertNewHappinessQuestionnaireInput(
         $accountId,
@@ -48,13 +39,14 @@ if(isset($_REQUEST['happinessQuestionnaireInput'])){
      
         );
     }
-
 ?>
 
 
 
 
 <html>
+<div class='profilePageMainDiv'>
+<div class='profileFormDiv'>
   <h2>Profile</h2>
   <p>This is your profile page. Please fill this out only once. The daily questionnaire is down below. </p> 
     <form action='' method='post'>  
@@ -71,7 +63,7 @@ if(isset($_REQUEST['happinessQuestionnaireInput'])){
             <input type='text' name='occupation' value= '<?php echo $user['occupation'] ?>'/><br />
 
             How stressful would you rate your occupation? (1=not stressed at all, 10=extremely stressed)
-            <input type="radio" name="occupationStressLevel" value='1' > 1
+            <input type="radio" name="occupationStressLevel" value='1 ' > 1
             <input type="radio" name='occupationStressLevel' value='2'> 2
             <input type="radio" name="occupationStressLevel" value='3' > 3
             <input type="radio" name='occupationStressLevel' value='4'> 4
@@ -97,14 +89,12 @@ if(isset($_REQUEST['happinessQuestionnaireInput'])){
             <input type="radio" name='stressLevel' value='10'> 10
             <br /> 
 
-     
-
             What kind of caffeinated beverage do you typically drink:
                 <select name='typeBeverage' >
-                    <option value='coffee'>coffee</option>
-                    <option value='tea'>tea</option>
-                    <option value='soda'>soda</option>
-                    <option value='other'>other</option>
+                    <option value='<?php echo $user['typeBeverage'] ?>'>coffee</option>
+                    <option value='<?php echo $user['typeBeverage'] ?>'>tea</option>
+                    <option value='<?php echo $user['typeBeverage'] ?>'>soda</option>
+                    <option value='<?php echo $user['typeBeverage'] ?>'>other</option>
                 </select><br /> 
             
             Please specify what kind of beverage (ie black coffee, cola, green tea, etc):
@@ -116,7 +106,7 @@ if(isset($_REQUEST['happinessQuestionnaireInput'])){
 
 
             Have you recently experienced or are currently experiencing a life altering event? (ie moving houses, switching jobs, etc )?<br />
-            <input type="radio" name="lifeEvent" value='yes' > yes
+            <input type="radio" name="lifeEvent" value='yes ' > yes
             <input type="radio" name='lifeEvent' value='no'> no<br>
 
 
@@ -132,8 +122,15 @@ if(isset($_REQUEST['happinessQuestionnaireInput'])){
 
             
             <br />
+        
+        </div>
 
+        <div class='avatarDiv'>
+            <img src='avatarImage2.png' class='avatarPic'>
+        </div>
 
+    </div>
+<!--
             <h2>Happiness Scale</h2>
             <p> 
             Please fill out this questionnaire after filling out the last daily questionnaire. </p>
@@ -141,8 +138,6 @@ if(isset($_REQUEST['happinessQuestionnaireInput'])){
          
         
            
-
-
            <p>In general I consider myself  </p>
             <input type="radio" name="happinessQuestion1" value="1" >1 (not a very happy person)
            <input type="radio" name="happinessQuestion1" value="2" >2
@@ -153,7 +148,6 @@ if(isset($_REQUEST['happinessQuestionnaireInput'])){
            <input type="radio" name="happinessQuestion1" value="7" >7 (a very happy person )
            
            <br /><br />
-
            <p>Compared to most of my peers, I feel  </p> 
            <input type="radio" name="happinessQuestion2" value="1" >1 (less happy)
            <input type="radio" name="happinessQuestion2" value="2" >2
@@ -163,10 +157,7 @@ if(isset($_REQUEST['happinessQuestionnaireInput'])){
            <input type="radio" name="happinessQuestion2" value="6" >6
            <input type="radio" name="happinessQuestion2" value="7" >7 (more happy)
   
-
-
            <br /><br />
-
            
            <p>Some people are generally very happy.  They enjoy life regardless of what is going on, getting the most out of everything.  To what extent does this characterization describe you?</p> 
            <input type="radio" name="happinessQuestion3" value="1" >1 (not at all)
@@ -177,9 +168,7 @@ if(isset($_REQUEST['happinessQuestionnaireInput'])){
            <input type="radio" name="happinessQuestion3" value="6" >6
            <input type="radio" name="happinessQuestion3" value="7" >7 (a great deal)
            
-
            <br /><br />
-
            <p>Some people are generally not very happy.  Although they are not depressed, they never seem as happy as they might be.  To what extent does this characterization describe you?</p> 
            <input type="radio" name="happinessQuestion4" value="1" >1 (not at all)
            <input type="radio" name="happinessQuestion4" value="2" >2
@@ -190,13 +179,14 @@ if(isset($_REQUEST['happinessQuestionnaireInput'])){
            <input type="radio" name="happinessQuestion4" value="7" >7 (a great deal)
        
            <br /><br />
-
            <input type='submit' name='happinessQuestionnaireInput' value='Submit' />
-
            <br /><br /><br />
            
-
 <p> Happiness Scale Citation: Lyubomirsky, S., & Lepper, H. (1999). A measure of subjective happiness: Preliminary reliability and construct validation. Social Indicators Research, 46, 137-155. </p>
+            -->
+
+
+</div>
 
 <!--
 //$accountId=getUser($_REQUEST['accountId']); //save number in url as variable
