@@ -55,34 +55,7 @@ include('config/init.php');
                     </div>
             </div>
         </div>
-
-       <!-- <div class='educationDiv'>
-            <h2 class='divTitles'>Education</h2>
-            <hr class='lineUnderneathDivTitles'>
-
-                <div class='educationRowWashu'>
-                    <div class='educationRowPictureWashu'>
-                        <img src='washuPicture.png' class='washuLogo'>
-                    </div>
-                    <div class='educationRowWords'>
-                        <h4>Washington University in St. Louis</h4> 
-                            <p>August 2018-May 2022</p>
-                            <br>
-                                <p>I am currently a rising sophomore pursuing a degree in Neuroscience. </p>
-                    </div>
-                </div>
-                 <div class='educationRowBradshaw'>
-                    <div class='educationRowPictureBradshaw'>
-                        <img src='bcsLogo.png' class='bcsLogo'>
-                    </div>
-                   <div class='educationRowWords'>
-                        <h4>Bradshaw Christian High School</h4>
-                            <p>August 2014-June 2018</p>
-                                <p>Some words about Bradshaw</p>
-                    </div>
-                </div> -->
-       
-
+        
     
         <div class='thingsIveDoneDiv'>
             <h2 class='divTitles'>Experiences</h2>
@@ -126,6 +99,8 @@ include('config/init.php');
                     </div>
                 </div>
         </div>
+
+
         <div class='skillsDiv'>
             <h2 class='divTitles'>Skills</h2>
             <hr class='lineUnderneathDivTitles'>
@@ -161,6 +136,8 @@ include('config/init.php');
                 </div>
             </div>
         </div>
+
+
         <div class='myThoughtsDiv'>
             <h2 class='divTitles'>My Thoughts</h2>
             <hr class='lineUnderneathDivTitles'>
@@ -191,14 +168,14 @@ include('config/init.php');
                         <p>Read more</p>
                     </div>
                 </div>
-                
         </div>
+
 
         <div class='footerContactDiv'>
             <h2 class='divTitles'>Contact</h2>
             <hr class='lineUnderneathDivTitles'>
                 <p class='contactWords'>
-                    h.hahm@wustl.edu <br>
+                <a href="mailto:h.hahm@wustl.edu?Subject=Hello%20" target="_top" class='email'>h.hahm@wustl.edu </a><br>
                     <a href='https://www.linkedin.com/in/hannah-hahm-88243718a/' class='LinkedIn'>LinkedIn</a>
                 </p>
         </div>

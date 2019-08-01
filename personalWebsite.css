@@ -380,15 +380,16 @@ a{
 
 }
 
-a.LinkedIn:link{
+a.LinkedIn:link, a.email:link{
+    text-decoration:none;
     color:black;
 }
 
-a.LinkedIn:visited{
+a.LinkedIn:visited, a.email:visited{
     color:black;
 }
 
-.LinkedIn:hover{
+a.LinkedIn:hover, a.email:hover{
     color:lightgrey;
 }
 
