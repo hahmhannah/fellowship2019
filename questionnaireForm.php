@@ -3,7 +3,7 @@ include('config/init.php');
 echologgedInHeader("questionnaire"); 
 $user = getUser($_SESSION['accountId']); 
 $accountId = $user['accountId'];
-$dailyQuestionnaireLogInfo = getDailyQuestionnaireLog($_SESSION['accountId']);
+//$dailyQuestionnaireLogInfo = getDailyQuestionnaireLog($_SESSION['accountId']);
 
 //state of the page 
 if(isset($_REQUEST['day'])){
