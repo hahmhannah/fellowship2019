@@ -116,7 +116,7 @@ if(isset($_REQUEST['happinessQuestionnaireInput'])){
             <input type='submit' name='newProfileEdit' value='edit profile' />
             <br/><br/><br />
            
-            Go to the <a href='questionnaireForm.php'>daily questionnaire</a>
+            Go to the <a href='/questionnaireForm.php'>daily questionnaire</a>
             
             <br /><br />
 

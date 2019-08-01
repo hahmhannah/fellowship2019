@@ -16,7 +16,7 @@ if(isset($_REQUEST['attemptLogin'])){  //button is called attemptlogin, if it is
    
    
     echo "  
-    You are logged in as ".$user['email'].". Go to your <a href='/userLoggedInProfile.php'>profile page</a> or go to <a href='questionnaireForm.php'>questionnaire</a>.
+    You are logged in as ".$user['email'].". Go to your <a href='/userLoggedInProfile.php'>profile page</a> or go to <a href='/questionnaireForm.php'>questionnaire</a>.
     "; 
     exit;
   }
