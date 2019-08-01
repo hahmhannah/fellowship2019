@@ -4,6 +4,7 @@ echologgedInHeader("questionnaire");
 $user = getUser($_SESSION['accountId']); 
 $accountId = $user['accountId'];
 $dailyQuestionnaireLogInfo = getDailyQuestionnaireLog($_SESSION['accountId']);
+
 //state of the page 
 if(isset($_REQUEST['day'])){
   $date = $_REQUEST['day'];
@@ -11,28 +12,29 @@ if(isset($_REQUEST['day'])){
 else{
   $date = date('Y-m-d');
 }
+
 if(isset($_REQUEST['NewQuestionnaireData'])){
   
    insertNewQuestionnaireData(
        $accountId,
        $date,
        $_REQUEST['questionnaireBeverage'],
-       $_REQUEST['questionnaireBeverageOther'], 
-       $_REQUEST['beverageSpecific'], 
        $_REQUEST['howMuchBeverage'], 
        $_REQUEST['howMuchWater'], 
        $_REQUEST['sleep'], 
        $_REQUEST['stress'],
-       $_REQUEST['breakfast'],
-       $_REQUEST['lunch'],
+       $_REQUEST['eat'],
+       $_REQUEST['mood'],
        $_REQUEST['exercise'],
        $_REQUEST['personalInfoBoxReminders'],
        $_REQUEST['personalInfoBoxGrateful'], 
        $_REQUEST['personalInfoBoxNotes']
+
        
 ); 
  
 } 
+
 ?>
 
     <html>
@@ -56,10 +58,11 @@ if(isset($_REQUEST['NewQuestionnaireData'])){
                                 <option value='none'>none</option>
                             </select><br /> 
                             <br>
-                      If more than 1, please list them:
-                      <input type='text'  name='questionnaireBeverageOther' value='<?php echo $dailyQuestionnaireLogInfo['questionnaireBeverageOther'] ?>' /><br />
-                      <br>
-
+                    
+                      How many cups of the above beverage did you drink?:
+                      <input type='text'  name='howMuchBeverage' value='<?php echo $dailyQuestionnaireLogInfo['howMuchBeverage'] ?>' /><br />
+                      
+                    <!--
                       Please specify what kind of the above beverage you drank today (ie black coffee, green tea):
                       <input type='text'  name='beverageSpecific' /><br />
 
@@ -67,10 +70,10 @@ if(isset($_REQUEST['NewQuestionnaireData'])){
                       How much of the beverage chosen above did you drink today?:<br>
                       <input type='text'  name='howMuchBeverage' /><br />
                      
-
+                      -->
 
                       <br>
-                      How much water did you drink today?:<br>
+                      How many cups of water did you drink today?:<br>
                       <input type='text'  name='howMuchWater' /><br />
                      
 
@@ -80,21 +83,20 @@ if(isset($_REQUEST['NewQuestionnaireData'])){
                      
 
                       <br>
-                        How much stress did you experience today?:<br>
+                      How much stress did you experience today?:<br>
                       <input type="radio" required name="stress" value="little to no stress" >Little to no stress<br>
                       <input type="radio" name='stress' value="some stress"> some/moderate stress<br>
                       <input type="radio" name="stress" value="high stress" > high stress<br>
                       
                       <br>
-                        Did you eat breakfast today?:
-
-                      <input type="radio" required name="breakfast" value="yes" > yes
-                      <input type="radio" name='breakfast' value="no"> no<br>
-
+                      What did you eat today?:<br>
+                      <input type="checkbox"  name="eat" value="breakfast" > breakfast<br>
+                      <input type="checkbox" name='eat' value="lunch"> lunch<br>
+                      <input type="checkbox"   name="eat" value="dinner" > dinner
                       <br>
-                        Did you eat lunch today?:
+                        <!-- Did you eat lunch today?:
                         <input type="radio"  required name="lunch" value="yes" > yes
-                        <input type="radio"  name='lunch' value="no "> no<br>
+                        <input type="radio"  name='lunch' value="no "> no<br> -->
                             
                         <br>
                         How much exercise did you do today?<br>
@@ -103,26 +105,37 @@ if(isset($_REQUEST['NewQuestionnaireData'])){
                         <input type="radio" name='exercise' value="medium intensity"> medium intensity (ie light sweat, can talk but with some effort)<br>
                         <input type="radio" name="exercise" value="high intensity" > high intensity (ie unable to say more than a few words)<br>
                             
-                        
+                        <br>
+                      How are you feeling today?<br>
+                      <input type="checkbox"  name="mood" value="content" > content
+                      <input type="checkbox" name='mood' value="happy"> happy<br>
+                      <input type="checkbox"   name="mood" value="sad" > sad 
+                      <input type="checkbox"   name="mood" value="tired" > tired <br>
+                      <input type="checkbox"   name="mood" value="angry" > angry 
+                      <input type="checkbox"   name="mood" value="calm" > calm <br>
+                      <input type="checkbox"   name="mood" value="anxious" > anxious 
+                      <input type="checkbox"   name="mood" value="restless" > restless <br>
+                      <input type="checkbox"   name="mood" value="frustrated" > frustrated 
+                      <br>
                         
               </div>
 
               <div class='personalInfoBox'>
                 <div class='personalInfoReminders'>
-                  Reminders:
-                    <textarea  name='personalInfoBoxReminders'></textarea>
+                  Reminders:     
+                    <textarea  name='personalInfoBoxReminders' cols='109' rows='6'></textarea>
                       <br> 
                  
                 </div>
                 <div class='personalInfoGrateful'>
                   Today I'm grateful for:
-                    <textarea  name='personalInfoBoxGrateful' ></textarea>
+                    <textarea  name='personalInfoBoxGrateful' cols='99' rows='11' ></textarea>
                       <br>
                     
                 </div>
                 <div class='personalInfoNotes'>
                   Notes:
-                    <textarea  name='personalInfoBoxNotes' ></textarea>
+                    <textarea  name='personalInfoBoxNotes' cols='114' rows='20'></textarea>
 
                     
                     
@@ -137,4 +150,3 @@ if(isset($_REQUEST['NewQuestionnaireData'])){
         </body>
     </html>
       
-
